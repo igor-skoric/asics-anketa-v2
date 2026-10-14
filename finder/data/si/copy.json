@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "htmlLang": "sl",
+    "title": "Najdi svoj korak | ASICS Shoe Finder",
+    "description": "Hitreje, dlje ali stran od asfalta? Odgovori na tri kratka vprašanja in najdi ASICS tekaške copate za svoj način teka."
+  },
+  "header": {
+    "home": "ASICS Shoe Finder začetek",
+    "logoAlt": "ASICS — sound mind, sound body",
+    "reset": "Začni znova"
+  },
+  "progress": {
+    "kicker": "NAJDI SVOJE COPATE",
+    "time": "3 vprašanja · tvoja izbira",
+    "label": "Napredek",
+    "steps": {
+      "surface": "Podlaga",
+      "priority": "Prednost",
+      "detail": "Podrobnosti",
+      "result": "Rezultat"
+    }
+  },
+  "quiz": {
+    "eyebrow": "VPRAŠANJE {current} / {total}",
+    "back": "Prejšnje vprašanje",
+    "hint": "Izberi en odgovor.",
+    "next": "Naprej",
+    "finish": "Najdi moje copate"
+  },
+  "questions": {
+    "surface": {
+      "title": "Kje najpogosteje tečeš?",
+      "intro": "Izberi podlago, na kateri preživiš največ časa.",
+      "options": {
+        "road": {
+          "label": "Asfalt / beton",
+          "description": "Ulice, nabrežja in mestne steze."
+        },
+        "trail": {
+          "label": "Gozd / makadam / hribi",
+          "description": "Tek v naravi, zunaj asfaltiranih poti."
+        }
+      }
+    },
+    "road": {
+      "title": "Kaj ti je pomembneje?",
+      "intro": "Izberi tisto, kar iščeš pri svojih naslednjih copatih.",
+      "options": {
+        "comfort": {
+          "label": "Udobje in podpora",
+          "description": "Za vsakodnevni tek in daljše treninge."
+        },
+        "speed": {
+          "label": "Hitrost in lahkotnost",
+          "description": "Za hitrejše treninge, tempo in tekme."
+        }
+      }
+    },
+    "trail": {
+      "title": "Kaj ti je pomembneje na terenu?",
+      "intro": "Premisli o občutku, ki ga želiš med tekom.",
+      "options": {
+        "protection": {
+          "label": "Zaščita in varnost",
+          "description": "Več zaščite in opore na stezi."
+        },
+        "light": {
+          "label": "Lahkotnost in svoboda gibanja",
+          "description": "Lažji občutek pri vsakem koraku."
+        }
+      }
+    },
+    "comfort": {
+      "title": "Kaj ti bolj ustreza med tekom?",
+      "intro": "Izberi občutek, ki ga želiš pod stopalom.",
+      "options": {
+        "soft": {
+          "label": "Mehak in udoben korak",
+          "description": "Najpomembnejše mi je blaženje doskoka."
+        },
+        "support": {
+          "label": "Dodatna opora pri vsakem koraku",
+          "description": "Bolj mi ustreza občutek podpore in zanesljivejšega koraka."
+        }
+      }
+    },
+    "speed": {
+      "title": "Za kakšen tek izbiraš copate?",
+      "intro": "Izberi njihov glavni namen.",
+      "options": {
+        "training": {
+          "label": "Za redne in hitrejše treninge",
+          "description": "Želim copate za pogoste treninge in spremembe tempa."
+        },
+        "race": {
+          "label": "Za tekme in osebni rekord",
+          "description": "Želim copate za dneve, ko dam svoj maksimum."
+        }
+      }
+    },
+    "terrain": {
+      "title": "Kakšen teren najpogosteje izbiraš?",
+      "intro": "Izberi opis, ki je bližje tvojim običajnim stezam.",
+      "options": {
+        "technical": {
+          "label": "Neraven in skalnat",
+          "description": "Steze s kamenjem, koreninami in zahtevnejšimi odseki."
+        },
+        "smooth": {
+          "label": "Urejenejši in prehodnejši",
+          "description": "Zemljene steze in makadam z manj ovirami."
+        }
+      }
+    }
+  },
+  "recommendations": {
+    "road/comfort/soft": {
+      "title": "Udobje za vsakodnevni tek",
+      "note": "Predlogi za tvojo izbiro mehkega in udobnega koraka."
+    },
+    "road/comfort/support": {
+      "title": "Udobje z dodatno podporo",
+      "note": "Predlogi za tvojo izbiro dodatne opore med tekom."
+    },
+    "road/speed/training": {
+      "title": "Hitrost za tvoje treninge",
+      "note": "Predlogi za redne treninge in spremembe tempa."
+    },
+    "road/speed/race": {
+      "title": "Hitrost za dan tekme",
+      "note": "Predlogi za tekme in poskuse, da izboljšaš osebni rekord."
+    },
+    "trail/protection/technical": {
+      "title": "Zaščita na zahtevnejših stezah",
+      "note": "Izbiraš več zaščite na neravnem in skalnatem terenu."
+    },
+    "trail/protection/smooth": {
+      "title": "Zaščita in udobje na stezi",
+      "note": "Izbiraš več zaščite na zemljenih in makadamskih stezah."
+    },
+    "trail/light/technical": {
+      "title": "Lahkotnost na zahtevnejših stezah",
+      "note": "Izbiraš lažji občutek na neravnem in skalnatem terenu."
+    },
+    "trail/light/smooth": {
+      "title": "Lahkotnost za prehodnejše steze",
+      "note": "Izbiraš lažji občutek na zemljenih in makadamskih stezah."
+    }
+  },
+  "result": {
+    "eyebrow": "TVOJA IZBIRA",
+    "edit": "Spremeni odgovore",
+    "answersLabel": "Tvoji odgovori",
+    "filterLabelText": "Prikaži različice",
+    "filterPrefix": "Prikaži:",
+    "filterAll": "Vse",
+    "variantHint": "Izberi različico in barvo. Gumb vodi do izbranega izdelka v Sport Visionu.",
+    "trailExtra": "Dodatni trail model",
+    "availability": "Ponudba preverjena {date}. Razpoložljivost velikosti in barv se lahko spremeni; preveri jo na strani izdelka.",
+    "loading": "Nalagamo tvoje copate…",
+    "stockGender": "Trenutno ni potrjene razpoložljive {gender} različice tega modela.",
+    "stockWomen": "ženske",
+    "stockMen": "moške",
+    "stockNone": "Trenutno ni potrjene razpoložljive različice v spletni ponudbi Sport Vision."
+  },
+  "genders": {
+    "men": "Moški",
+    "women": "Ženski",
+    "unisex": "Unisex",
+    "unisexGroup": "{gender} — za ženske in moške"
+  },
+  "product": {
+    "store": "Oglej si v Sport Visionu",
+    "alt": "ASICS {model}",
+    "altColor": "ASICS {model} — {color}",
+    "variantAria": "{gender} — {color} — {sku}"
+  },
+  "colors": {
+    "Plava": "Modra",
+    "Zelena": "Zelena",
+    "Bela": "Bela",
+    "Crna": "Črna",
+    "Bež": "Bež",
+    "Roze": "Rožnata",
+    "Ljubičasta": "Vijolična",
+    "Multicolor": "Multicolor"
+  },
+  "errors": {
+    "title": "Poskusi znova.",
+    "body": "Podatki o modelih trenutno niso na voljo. Osveži stran."
+  }
+}

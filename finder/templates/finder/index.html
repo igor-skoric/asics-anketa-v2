@@ -1,0 +1,13 @@
+{% load static %}<!doctype html>
+<html lang="{{ copy.meta.htmlLang }}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{{ copy.meta.title }}</title><meta name="description" content="{{ copy.meta.description }}"><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b1952'/%3E%3Cpath d='M8 23 16 8h6l-8 15' fill='%23d9fa53'/%3E%3C/svg%3E"><link rel="stylesheet" href="{% static 'style.css' %}?v=14"></head><body>
+<header><a class="brand" href="{% url 'finder' market.code %}" aria-label="{{ copy.header.home }}"><img class="brand-logo" src="{% static 'assets/asics-logo.png' %}" alt="{{ copy.header.logoAlt }}" width="361" height="142"></a><button class="reset" id="reset">{{ copy.header.reset }} <span aria-hidden="true">↗</span></button></header>
+<main id="main"><div class="topline"><span>{{ copy.progress.kicker }}</span><span class="time">{{ copy.progress.time }}</span></div><ol class="steps" aria-label="{{ copy.progress.label }}"><li class="active"><span>01</span> {{ copy.progress.steps.surface }}</li><li><span>02</span> {{ copy.progress.steps.priority }}</li><li><span>03</span> {{ copy.progress.steps.detail }}</li><li><span>04</span> {{ copy.progress.steps.result }}</li></ol><div id="view"></div></main>
+{{ copy|json_script:"shoe-finder-copy" }}
+{{ products|json_script:"shoe-finder-products" }}
+{{ config|json_script:"shoe-finder-config" }}
+<script>
+window.SHOE_FINDER_COPY = JSON.parse(document.getElementById("shoe-finder-copy").textContent);
+window.SHOE_FINDER_PRODUCTS = JSON.parse(document.getElementById("shoe-finder-products").textContent);
+window.SHOE_FINDER_CONFIG = JSON.parse(document.getElementById("shoe-finder-config").textContent);
+</script>
+<script src="{% static 'app.js' %}?v=26"></script></body></html>

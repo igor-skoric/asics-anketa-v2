@@ -1,0 +1,737 @@
+window.PRODUCTS = [
+  {
+    "key": "metaspeed",
+    "model_name": "METASPEED SKY TOKYO",
+    "sku": "1013A162-400",
+    "filename": "metaspeed.webp",
+    "source_url": "https://www.asics.com/jp/ja-jp/metaspeed-sky-tokyo/p/1013A162-300.html",
+    "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1013A162-400/images/1013A162-400.jpg.webp",
+    "bytes": 112059,
+    "store_url": "https://www.sportvision.rs/patike/70088219-asics-metaspeed-sky-tokyo",
+    "store_sku": "1013A162-400",
+    "available": true,
+    "checked_at": "2026-09-29",
+    "available_size_count": 6,
+    "store_product_url": "https://www.sportvision.rs/patike/70088219-asics-metaspeed-sky-tokyo",
+    "variants": [
+      {
+        "id": "70088219",
+        "sku": "1013A162-400",
+        "gender": "unisex",
+        "color": "Plava",
+        "filename": "variants/1013A162-400.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1013A162-400/images/1013A162-400.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70088219-asics-metaspeed-sky-tokyo",
+        "available_size_count": 6
+      }
+    ]
+  },
+  {
+    "key": "magic-speed",
+    "model_name": "MAGIC SPEED 5",
+    "sku": "1013A183-300",
+    "filename": "magic-speed.webp",
+    "source_url": "https://www.asics.com/us/en-us/magic-speed-5/p/ANA_1013A183-001.html",
+    "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1013A183-300/images/1013A183-300.jpg.webp",
+    "bytes": 104428,
+    "store_url": "https://www.sportvision.rs/patike/70069445-asics-magic-speed-5",
+    "store_sku": "1013A183-300",
+    "available": true,
+    "checked_at": "2026-09-29",
+    "available_size_count": 6,
+    "store_product_url": "https://www.sportvision.rs/patike/70069445-asics-magic-speed-5",
+    "variants": [
+      {
+        "id": "70069445",
+        "sku": "1013A183-300",
+        "gender": "unisex",
+        "color": "Zelena",
+        "filename": "variants/1013A183-300.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1013A183-300/images/1013A183-300.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70069445-asics-magic-speed-5",
+        "available_size_count": 6
+      },
+      {
+        "id": "70084742",
+        "sku": "1013A183-101",
+        "gender": "unisex",
+        "color": "Bela",
+        "filename": "variants/1013A183-101.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1013A183-101/images/1013A183-101.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70084742-asics-magic-speed-5",
+        "available_size_count": 9
+      }
+    ]
+  },
+  {
+    "key": "superblast",
+    "model_name": "SUPERBLAST 3",
+    "sku": "1013A177-750",
+    "filename": "superblast.webp",
+    "source_url": "https://www.asics.com/us/en-us/superblast-3/p/ANA_1013A177-750.html",
+    "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1013A177-750/images/1013A177-750.jpg.webp",
+    "bytes": 86937,
+    "store_url": "https://www.sportvision.rs/patike/70084855-asics-superblast-3",
+    "store_sku": "1013A177-750",
+    "available": true,
+    "checked_at": "2026-09-29",
+    "available_size_count": 4,
+    "store_product_url": "https://www.sportvision.rs/patike/70084855-asics-superblast-3",
+    "variants": [
+      {
+        "id": "70084732",
+        "sku": "1013A177-001",
+        "gender": "unisex",
+        "color": "Crna",
+        "filename": "variants/1013A177-001.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1013A177-001/images/1013A177-001.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70084732-asics-superblast-3",
+        "available_size_count": 5
+      },
+      {
+        "id": "70084855",
+        "sku": "1013A177-750",
+        "gender": "unisex",
+        "color": "Zelena",
+        "filename": "variants/1013A177-750.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1013A177-750/images/1013A177-750.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70084855-asics-superblast-3",
+        "available_size_count": 4
+      }
+    ]
+  },
+  {
+    "key": "novablast",
+    "model_name": "NOVABLAST 6",
+    "sku": "1011C243-001",
+    "filename": "novablast.webp",
+    "source_url": "https://www.asics.com/us/en-us/novablast-6/p/ANA_1011C243-100.html",
+    "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C243-001/images/1011C243-001.jpg.webp",
+    "bytes": 85345,
+    "store_url": "https://www.sportvision.rs/patike/70090897-asics-novablast-6",
+    "store_sku": "1011C243-001",
+    "available": true,
+    "checked_at": "2026-09-29",
+    "available_size_count": 9,
+    "store_product_url": "https://www.sportvision.rs/patike/70090897-asics-novablast-6",
+    "variants": [
+      {
+        "id": "70088214",
+        "sku": "1012C008-700",
+        "gender": "women",
+        "color": "Bež",
+        "filename": "variants/1012C008-700.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012C008-700/images/1012C008-700.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70088214-asics-novablast-6",
+        "available_size_count": 8
+      },
+      {
+        "id": "70088224",
+        "sku": "1011C243-700",
+        "gender": "men",
+        "color": "Bež",
+        "filename": "variants/1011C243-700.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C243-700/images/1011C243-700.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70088224-asics-novablast-6",
+        "available_size_count": 10
+      },
+      {
+        "id": "70090897",
+        "sku": "1011C243-001",
+        "gender": "men",
+        "color": "Crna",
+        "filename": "variants/1011C243-001.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C243-001/images/1011C243-001.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70090897-asics-novablast-6",
+        "available_size_count": 9
+      },
+      {
+        "id": "70095915",
+        "sku": "1012C008-500",
+        "gender": "women",
+        "color": "Roze",
+        "filename": "variants/1012C008-500.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012C008-500/images/1012C008-500.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70095915-asics-novablast-6",
+        "available_size_count": 8
+      }
+    ]
+  },
+  {
+    "key": "gel-nimbus",
+    "model_name": "GEL-NIMBUS 28",
+    "sku": "1012B899-700",
+    "filename": "gel-nimbus.webp",
+    "source_url": "https://www.asics.com/us/en-us/gel-nimbus-28/p/ANA_1011C127-020.html",
+    "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B899-700/images/1012B899-700.jpg.webp",
+    "bytes": 82632,
+    "store_url": "https://www.sportvision.rs/patike/70067887-asics-gel-nimbus-28",
+    "store_sku": "1012B899-700",
+    "available": true,
+    "checked_at": "2026-09-29",
+    "available_size_count": 7,
+    "store_product_url": "https://www.sportvision.rs/patike/70067887-asics-gel-nimbus-28",
+    "variants": [
+      {
+        "id": "70067837",
+        "sku": "1012B899-500",
+        "gender": "women",
+        "color": "Ljubičasta",
+        "filename": "variants/1012B899-500.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B899-500/images/1012B899-500.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70067837-asics-gel-nimbus-28",
+        "available_size_count": 3
+      },
+      {
+        "id": "70067852",
+        "sku": "1011C127-001",
+        "gender": "men",
+        "color": "Crna",
+        "filename": "variants/1011C127-001.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C127-001/images/1011C127-001.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70067852-asics-gel-nimbus-28",
+        "available_size_count": 1
+      },
+      {
+        "id": "70067887",
+        "sku": "1012B899-700",
+        "gender": "women",
+        "color": "Roze",
+        "filename": "variants/1012B899-700.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B899-700/images/1012B899-700.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70067887-asics-gel-nimbus-28",
+        "available_size_count": 7
+      },
+      {
+        "id": "70067922",
+        "sku": "1011C127-003",
+        "gender": "men",
+        "color": "Crna",
+        "filename": "variants/1011C127-003.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C127-003/images/1011C127-003.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70067922-asics-gel-nimbus-28",
+        "available_size_count": 3
+      },
+      {
+        "id": "70069535",
+        "sku": "1011C127-400",
+        "gender": "men",
+        "color": "Zelena",
+        "filename": "variants/1011C127-400.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C127-400/images/1011C127-400.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70069535-asics-gel-nimbus-28",
+        "available_size_count": 4
+      },
+      {
+        "id": "70084767",
+        "sku": "1011C127-004",
+        "gender": "men",
+        "color": "Crna",
+        "filename": "variants/1011C127-004.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C127-004/images/1011C127-004.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70084767-asics-gel-nimbus-28",
+        "available_size_count": 10
+      }
+    ]
+  },
+  {
+    "key": "gel-cumulus",
+    "model_name": "GEL-CUMULUS 28",
+    "sku": "1011C143-001",
+    "filename": "gel-cumulus.webp",
+    "source_url": "https://www.asics.com/us/en-us/gel-cumulus-27/p/ANA_1011B960-300.html",
+    "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C143-001/images/1011C143-001.jpg.webp",
+    "bytes": 78426,
+    "store_url": "https://www.sportvision.rs/patike/70073632-asics-gel-cumulus-28",
+    "store_sku": "1011C143-001",
+    "available": true,
+    "checked_at": "2026-09-29",
+    "available_size_count": 2,
+    "store_product_url": "https://www.sportvision.rs/patike/70073632-asics-gel-cumulus-28",
+    "variants": [
+      {
+        "id": "70073600",
+        "sku": "1012B916-500",
+        "gender": "women",
+        "color": "Ljubičasta",
+        "filename": "variants/1012B916-500.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B916-500/images/1012B916-500.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70073600-asics-gel-cumulus-28",
+        "available_size_count": 7
+      },
+      {
+        "id": "70073632",
+        "sku": "1011C143-001",
+        "gender": "men",
+        "color": "Crna",
+        "filename": "variants/1011C143-001.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C143-001/images/1011C143-001.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70073632-asics-gel-cumulus-28",
+        "available_size_count": 2
+      },
+      {
+        "id": "70084860",
+        "sku": "1012B916-501",
+        "gender": "women",
+        "color": "Roze",
+        "filename": "variants/1012B916-501.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B916-501/images/1012B916-501.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70084860-asics-gel-cumulus-28",
+        "available_size_count": 6
+      },
+      {
+        "id": "70090442",
+        "sku": "1011C143-002",
+        "gender": "men",
+        "color": "Crna",
+        "filename": "variants/1011C143-002.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C143-002/images/1011C143-002.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70090442-asics-gel-cumulus-28",
+        "available_size_count": 7
+      }
+    ]
+  },
+  {
+    "key": "gel-kayano",
+    "model_name": "GEL-KAYANO 33",
+    "sku": "1011C167-403",
+    "filename": "gel-kayano.webp",
+    "source_url": "https://www.sportvision.rs/patike/70084845-asics-gel-kayano-33",
+    "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C167-403/images/1011C167-403.jpg.webp",
+    "bytes": 55240,
+    "store_url": "https://www.sportvision.rs/patike/70084845-asics-gel-kayano-33",
+    "store_sku": "1011C167-403",
+    "available": true,
+    "checked_at": "2026-09-29",
+    "available_size_count": 2,
+    "store_product_url": "https://www.sportvision.rs/patike/70084845-asics-gel-kayano-33",
+    "variants": [
+      {
+        "id": "70084722",
+        "sku": "1011C167-100",
+        "gender": "men",
+        "color": "Bela",
+        "filename": "variants/1011C167-100.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C167-100/images/1011C167-100.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70084722-asics-gel-kayano-33",
+        "available_size_count": 10
+      },
+      {
+        "id": "70084727",
+        "sku": "1012B939-100",
+        "gender": "women",
+        "color": "Bela",
+        "filename": "variants/1012B939-100.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B939-100/images/1012B939-100.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70084727-asics-gel-kayano-33",
+        "available_size_count": 10
+      },
+      {
+        "id": "70084835",
+        "sku": "1012B939-501",
+        "gender": "women",
+        "color": "Roze",
+        "filename": "variants/1012B939-501.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B939-501/images/1012B939-501.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70084835-asics-gel-kayano-33",
+        "available_size_count": 6
+      },
+      {
+        "id": "70084845",
+        "sku": "1011C167-403",
+        "gender": "men",
+        "color": "Zelena",
+        "filename": "variants/1011C167-403.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C167-403/images/1011C167-403.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70084845-asics-gel-kayano-33",
+        "available_size_count": 2
+      },
+      {
+        "id": "70084876",
+        "sku": "1011C167-200",
+        "gender": "men",
+        "color": "Zelena",
+        "filename": "variants/1011C167-200.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C167-200/images/1011C167-200.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70084876-asics-gel-kayano-33",
+        "available_size_count": 9
+      },
+      {
+        "id": "70090427",
+        "sku": "1011C167-002",
+        "gender": "men",
+        "color": "Crna",
+        "filename": "variants/1011C167-002.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C167-002/images/1011C167-002.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70090427-asics-gel-kayano-33",
+        "available_size_count": 4
+      }
+    ]
+  },
+  {
+    "key": "gt-2000",
+    "model_name": "GT-2000 14",
+    "sku": "1011C056-004",
+    "filename": "gt-2000.webp",
+    "source_url": "https://www.asics.com/my/en-my/gt-2000-14/p/1011C056-002.html",
+    "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C056-004/images/1011C056-004.jpg.webp",
+    "bytes": 79855,
+    "store_url": "https://www.sportvision.rs/patike/70067857-asics-gt-2000-14",
+    "store_sku": "1011C056-004",
+    "available": true,
+    "checked_at": "2026-09-29",
+    "available_size_count": 2,
+    "store_product_url": "https://www.sportvision.rs/patike/70067857-asics-gt-2000-14",
+    "variants": [
+      {
+        "id": "70067857",
+        "sku": "1011C056-004",
+        "gender": "men",
+        "color": "Crna",
+        "filename": "variants/1011C056-004.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C056-004/images/1011C056-004.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70067857-asics-gt-2000-14",
+        "available_size_count": 2
+      },
+      {
+        "id": "70071645",
+        "sku": "1012B843-700",
+        "gender": "women",
+        "color": "Roze",
+        "filename": "variants/1012B843-700.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B843-700/images/1012B843-700.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70071645-asics-gt-2000-14",
+        "available_size_count": 5
+      }
+    ]
+  },
+  {
+    "key": "trabuco-max",
+    "model_name": "TRABUCO MAX 5",
+    "sku": "1011C164-020",
+    "filename": "trabuco-max.webp",
+    "source_url": "https://www.asics.com/my/en-my/trabuco-max-4/p/1011B976-750.html",
+    "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C164-020/images/1011C164-020.jpg.webp",
+    "bytes": 110823,
+    "store_url": "https://www.sportvision.rs/patike/70071695-asics-trabuco-max-5",
+    "store_sku": "1011C164-020",
+    "available": true,
+    "checked_at": "2026-09-29",
+    "available_size_count": 3,
+    "store_product_url": "https://www.sportvision.rs/patike/70071695-asics-trabuco-max-5",
+    "variants": [
+      {
+        "id": "70071695",
+        "sku": "1011C164-020",
+        "gender": "men",
+        "color": "Bež",
+        "filename": "variants/1011C164-020.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C164-020/images/1011C164-020.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70071695-asics-trabuco-max-5",
+        "available_size_count": 3
+      },
+      {
+        "id": "70071905",
+        "sku": "1012B937-250",
+        "gender": "women",
+        "color": "Bež",
+        "filename": "variants/1012B937-250.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B937-250/images/1012B937-250.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70071905-asics-trabuco-max-5",
+        "available_size_count": 4
+      },
+      {
+        "id": "70084712",
+        "sku": "1011C164-200",
+        "gender": "men",
+        "color": "Zelena",
+        "filename": "variants/1011C164-200.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C164-200/images/1011C164-200.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70084712-asics-trabuco-max-5",
+        "available_size_count": 11
+      },
+      {
+        "id": "70084800",
+        "sku": "1012B937-700",
+        "gender": "women",
+        "color": "Roze",
+        "filename": "variants/1012B937-700.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B937-700/images/1012B937-700.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70084800-asics-trabuco-max-5",
+        "available_size_count": 5
+      }
+    ]
+  },
+  {
+    "key": "fujispeed",
+    "model_name": "FUJISPEED 4",
+    "sku": "1013A179-750",
+    "filename": "fujispeed.webp",
+    "source_url": "https://www.asics.com/us/en-us/fujispeed-4/p/ANA_1013A179-401.html",
+    "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1013A179-750/images/1013A179-750.jpg.webp",
+    "bytes": 91395,
+    "store_url": "https://www.sportvision.rs/patike/70084865-asics-fujispeed-4",
+    "store_sku": "1013A179-750",
+    "available": true,
+    "checked_at": "2026-09-29",
+    "available_size_count": 8,
+    "store_product_url": "https://www.sportvision.rs/patike/70084865-asics-fujispeed-4",
+    "variants": [
+      {
+        "id": "70069187",
+        "sku": "1013A179-020",
+        "gender": "unisex",
+        "color": "Bež",
+        "filename": "variants/1013A179-020.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1013A179-020/images/1013A179-020.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70069187-asics-fuji-spee-4",
+        "available_size_count": 4
+      },
+      {
+        "id": "70084865",
+        "sku": "1013A179-750",
+        "gender": "unisex",
+        "color": "Zelena",
+        "filename": "variants/1013A179-750.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1013A179-750/images/1013A179-750.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70084865-asics-fujispeed-4",
+        "available_size_count": 8
+      }
+    ]
+  },
+  {
+    "key": "blazeblast",
+    "model_name": "BLAZEBLAST",
+    "sku": "1011C276-001",
+    "filename": "blazeblast.webp",
+    "source_url": "https://www.asics.com/sg/en-sg/blazeblast/p/1011C276-001.html",
+    "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C276-001/images/1011C276-001.jpg.webp",
+    "bytes": 97126,
+    "store_url": "https://www.sportvision.rs/patike/70099342-asics-blazeblast",
+    "store_sku": "1011C276-001",
+    "available": true,
+    "checked_at": "2026-09-29",
+    "available_size_count": 11,
+    "store_product_url": "https://www.sportvision.rs/patike/70099342-asics-blazeblast",
+    "variants": [
+      {
+        "id": "70099276",
+        "sku": "1012C037-500",
+        "gender": "women",
+        "color": "Ljubičasta",
+        "filename": "variants/1012C037-500.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012C037-500/images/1012C037-500.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70099276-asics-blazeblast",
+        "available_size_count": 9
+      },
+      {
+        "id": "70099342",
+        "sku": "1011C276-001",
+        "gender": "men",
+        "color": "Crna",
+        "filename": "variants/1011C276-001.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C276-001/images/1011C276-001.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70099342-asics-blazeblast",
+        "available_size_count": 11
+      }
+    ]
+  },
+  {
+    "key": "metafuji-trail",
+    "model_name": "METAFUJI TRAIL",
+    "sku": "1013A141-400",
+    "filename": "metafuji-trail.webp",
+    "source_url": "https://www.sportvision.rs/patike/70067832-asics-metafuji-trail",
+    "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1013A141-400/images/1013A141-400.jpg.webp",
+    "bytes": 98334,
+    "store_url": "https://www.sportvision.rs/patike/70067832-asics-metafuji-trail",
+    "store_sku": "1013A141-400",
+    "available": true,
+    "checked_at": "2026-09-29",
+    "available_size_count": 7,
+    "store_product_url": "https://www.sportvision.rs/patike/70067832-asics-metafuji-trail",
+    "variants": [
+      {
+        "id": "70067832",
+        "sku": "1013A141-400",
+        "gender": "unisex",
+        "color": "Plava",
+        "filename": "variants/1013A141-400.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1013A141-400/images/1013A141-400.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70067832-asics-metafuji-trail",
+        "available_size_count": 7
+      }
+    ]
+  },
+  {
+    "key": "noosa-tri",
+    "model_name": "NOOSA TRI 16",
+    "sku": "1012B675-801",
+    "filename": "noosa-tri.webp",
+    "source_url": "https://www.sportvision.rs/patike/70069490-asics-noosa-tri-16",
+    "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B675-801/images/1012B675-801.jpg.webp",
+    "bytes": 89388,
+    "store_url": "https://www.sportvision.rs/patike/70069490-asics-noosa-tri-16",
+    "store_sku": "1012B675-801",
+    "available": true,
+    "checked_at": "2026-09-29",
+    "available_size_count": 2,
+    "store_product_url": "https://www.sportvision.rs/patike/70069490-asics-noosa-tri-16",
+    "variants": [
+      {
+        "id": "70069490",
+        "sku": "1012B675-801",
+        "gender": "women",
+        "color": "Multicolor",
+        "filename": "variants/1012B675-801.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B675-801/images/1012B675-801.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70069490-asics-noosa-tri-16",
+        "available_size_count": 2
+      },
+      {
+        "id": "70071650",
+        "sku": "1011B872-301",
+        "gender": "men",
+        "color": "Multicolor",
+        "filename": "variants/1011B872-301.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011B872-301/images/1011B872-301.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70071650-asics-noosa-tri-16",
+        "available_size_count": 1
+      },
+      {
+        "id": "70089638",
+        "sku": "1012B675-704",
+        "gender": "women",
+        "color": "Roze",
+        "filename": "variants/1012B675-704.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B675-704/images/1012B675-704.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70089638-asics-noosa-tri-16",
+        "available_size_count": 5
+      },
+      {
+        "id": "70090437",
+        "sku": "1011B872-753",
+        "gender": "men",
+        "color": "Zelena",
+        "filename": "variants/1011B872-753.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011B872-753/images/1011B872-753.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70090437-asics-noosa-tri-16",
+        "available_size_count": 6
+      }
+    ]
+  },
+  {
+    "key": "dynablast",
+    "model_name": "DYNABLAST 6",
+    "sku": "1011C245-400",
+    "filename": "dynablast.webp",
+    "source_url": "https://www.sportvision.rs/patike/70090927-asics-dynablast-6",
+    "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C245-400/images/1011C245-400.jpg.webp",
+    "bytes": 83522,
+    "store_url": "https://www.sportvision.rs/patike/70090927-asics-dynablast-6",
+    "store_sku": "1011C245-400",
+    "available": true,
+    "checked_at": "2026-09-29",
+    "available_size_count": 10,
+    "store_product_url": "https://www.sportvision.rs/patike/70090927-asics-dynablast-6",
+    "variants": [
+      {
+        "id": "70090927",
+        "sku": "1011C245-400",
+        "gender": "men",
+        "color": "Plava",
+        "filename": "variants/1011C245-400.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C245-400/images/1011C245-400.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70090927-asics-dynablast-6",
+        "available_size_count": 10
+      },
+      {
+        "id": "70095895",
+        "sku": "1011C245-001",
+        "gender": "men",
+        "color": "Crna",
+        "filename": "variants/1011C245-001.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C245-001/images/1011C245-001.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70095895-asics-dynablast-6",
+        "available_size_count": 10
+      },
+      {
+        "id": "70095945",
+        "sku": "1012C010-250",
+        "gender": "women",
+        "color": "Bela",
+        "filename": "variants/1012C010-250.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012C010-250/images/1012C010-250.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70095945-asics-dynablast-6",
+        "available_size_count": 7
+      }
+    ]
+  },
+  {
+    "key": "versablast",
+    "model_name": "VERSABLAST 4",
+    "sku": "1011B984-001",
+    "filename": "versablast.webp",
+    "source_url": "https://www.sportvision.rs/patike/70026934-asics-versablast-4",
+    "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011B984-001/images/1011B984-001.jpg.webp",
+    "bytes": 103766,
+    "store_url": "https://www.sportvision.rs/patike/70026934-asics-versablast-4",
+    "store_sku": "1011B984-001",
+    "available": true,
+    "checked_at": "2026-09-30",
+    "available_size_count": 9,
+    "store_product_url": "https://www.sportvision.rs/patike/70026934-asics-versablast-4",
+    "variants": [
+      {
+        "id": "70026934",
+        "sku": "1011B984-001",
+        "gender": "men",
+        "color": "Crna",
+        "filename": "variants/1011B984-001.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011B984-001/images/1011B984-001.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70026934-asics-versablast-4",
+        "available_size_count": 9
+      },
+      {
+        "id": "70067822",
+        "sku": "1011B984-004",
+        "gender": "men",
+        "color": "Crna",
+        "filename": "variants/1011B984-004.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011B984-004/images/1011B984-004.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70067822-asics-versablast-4",
+        "available_size_count": 4
+      },
+      {
+        "id": "70067902",
+        "sku": "1012B775-003",
+        "gender": "women",
+        "color": "Crna",
+        "filename": "variants/1012B775-003.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B775-003/images/1012B775-003.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70067902-asics-versablast-4",
+        "available_size_count": 7
+      },
+      {
+        "id": "70090277",
+        "sku": "1012B775-503",
+        "gender": "women",
+        "color": "Roze",
+        "filename": "variants/1012B775-503.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B775-503/images/1012B775-503.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70090277-asics-versablast-4",
+        "available_size_count": 9
+      },
+      {
+        "id": "70090717",
+        "sku": "1011B984-005",
+        "gender": "men",
+        "color": "Crna",
+        "filename": "variants/1011B984-005.webp",
+        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011B984-005/images/1011B984-005.jpg.webp",
+        "store_url": "https://www.sportvision.rs/patike/70090717-asics-versablast-4",
+        "available_size_count": 1
+      }
+    ]
+  }
+];

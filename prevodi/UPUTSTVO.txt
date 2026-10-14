@@ -1,0 +1,44 @@
+UPUTSTVO ZA PREVOD
+ASICS Shoe Finder — tekstovi interfejsa
+
+Prevedi fajl sr.json na hrvatski i slovenački.
+Sačuvaj prevode kao hr.json i sl.json, u istom folderu, u UTF-8 kodiranju.
+Strukturu nemoj da menjaš: isti ključevi, isti redosled, isti nivoi.
+
+ŠTA SE PREVODI
+Samo tekst na srpskom, unutar navodnika, sa desne strane dvotačke.
+
+ŠTA SE NE MENJA
+- Ključevi sa leve strane: meta, header, road, trail, comfort, soft, "road/comfort/soft" i svi ostali identifikatori.
+- Placeholeri u vitičastim zagradama. Ostavi ih tačno ovako, na istom mestu u rečenici gde prirodno stoje u tom jeziku:
+  {current}  broj pitanja, već formatiran (01, 02, 03)
+  {total}    ukupno pitanja (03)
+  {date}     datum provere ponude
+  {gender}   muške / ženske, ili naziv pola
+  {model}    naziv modela patike
+  {color}    naziv boje
+  {sku}      šifra proizvoda
+- Naziv brenda ASICS.
+- Naziv prodavnice Sport Vision.
+- Nazive modela (METASPEED, GEL-NIMBUS i ostali) — nisu u ovom fajlu i ne prevode se.
+- Znakove ™, navodnike, zareze i vitičaste zagrade koje drže strukturu JSON-a.
+
+TON
+Obraćanje na „ti“, kao u izvorniku. Kratke rečenice, ton sportske ankete, bez reklamnog preterivanja.
+„Patike“ ovde znači sportske patike za trčanje.
+
+NAPOMENE UZ POJEDINE TEKSTOVE
+- header.logoAlt: „sound mind, sound body“ je zvanični slogan ASICS-a. Može da ostane na engleskom.
+- „Shoe Finder“ je naziv ovog alata. Može da ostane na engleskom ili da se prevede, ali isto u celom fajlu (naslov, aria oznaka).
+- result.trailExtra: „trail“ je trkački termin. Može da ostane ili da se prevede.
+- colors.Multicolor: može da ostane na engleskom ili da dobije uobičajeni lokalni naziv.
+- Boje prevedi kao nazive boja. Ključ ostaje srpski (npr. "Plava"), a prevod ide samo u vrednost.
+- genders.unisex: reč Unisex može da ostane.
+- result.filterAll: „Sve“ je filter koji pokazuje i muške i ženske modele.
+- Preporuke (recommendations) su naslovi i rečenice na ekranu rezultata, za konkretan izbor odgovora.
+  Ključ road/comfort/soft znači: asfalt → udobnost → mekan korak. Sam ključ se ne prevodi.
+
+PROVERA
+Fajl mora da ostane ispravan JSON.
+Ne dodaj komentare.
+Ne prevodi fajl sr.js — to je tehnička kopija za sajt.

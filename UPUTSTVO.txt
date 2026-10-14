@@ -1,0 +1,53 @@
+ASICS SHOE FINDER
+
+DJANGO
+Pokretanje na ovom računaru:
+  .venv\Scripts\python manage.py runserver
+Otvori http://127.0.0.1:8000/
+
+Ulaz / šalje posetioca na tržište:
+  1. ?market=rs|hr|si, ?lang=sr|hr|sl ili ?country=RS|HR|SI
+  2. sačuvani izbor (kolačić)
+  3. država iz zaglavlja CF-IPCountry, CloudFront-Viewer-Country ili X-Country-Code
+  4. jezik pregledača (sr, hr, sl)
+  5. ako ništa od toga nije poznato: Srbija
+
+Stranice: /rs/  /hr/  /si/
+Admin: http://127.0.0.1:8000/admin/
+Tamo se za svako tržište i svaku kombinaciju odgovora biraju patike.
+Nova patika se prvo doda u Patike (tržište, naziv, varijante i link), pa se ubaci u Ponude za odgovore.
+Prevod ostaje u finder\data\rs|hr|si\copy.json.
+Analitika je ista: događaji, a_opis i ID-jevi G-NYDZMQX8C8 i G-G04L3G3962.
+ID-jevi se menjaju po tržištu u adminu, na tržištu.
+
+Hrvatska i Slovenija na početku imaju istu ponudu kao Srbija.
+Posle toga se menjaju odvojeno, kroz admin.
+
+CPANEL
+U cPanelu: Setup Python App.
+- Python 3.12
+- Application root: folder u kome je manage.py
+- Application startup file: passenger_wsgi.py
+- Application Entry point: application
+
+Posle kreiranja aplikacije, u njenom interfejsu pokreni:
+  pip install -r requirements.txt
+  python manage.py migrate
+  python manage.py collectstatic --noinput
+  python manage.py createsuperuser
+
+Environment variables, pa Restart:
+  DJANGO_SECRET_KEY=dugacki-nasumicni-kljuc
+  DJANGO_DEBUG=0
+  DJANGO_ALLOWED_HOSTS=domen.com,www.domen.com
+  DJANGO_CSRF_TRUSTED_ORIGINS=https://domen.com,https://www.domen.com
+
+Ako sajt nije u korenu domena nego na putanji, dodaj i:
+  DJANGO_SCRIPT_NAME=/putanja
+
+db.sqlite3 i folder media nastaju na serveru. Ne briši ih pri sledećem ažuriranju koda.
+Ako admin ne pamti prijavu preko HTTP-a, privremeno stavi DJANGO_SECURE_SSL=0.
+
+STARI STATIČKI SAJT
+index.html, style.css, app.js i folderi assets i prevodi i dalje stoje zajedno.
+Pre zamene na hostingu sačuvaj kopiju starog sajta.
