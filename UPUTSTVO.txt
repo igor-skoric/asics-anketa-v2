@@ -17,8 +17,8 @@ Admin: http://127.0.0.1:8000/admin/
 Tamo se za svako tržište i svaku kombinaciju odgovora biraju patike.
 Nova patika se prvo doda u Patike (tržište, naziv, varijante i link), pa se ubaci u Ponude za odgovore.
 Prevod ostaje u finder\data\rs|hr|si\copy.json.
-Analitika je ista: događaji, a_opis i ID-jevi G-NYDZMQX8C8 i G-G04L3G3962.
-ID-jevi se menjaju po tržištu u adminu, na tržištu.
+Analitika (događaji i a_opis) ostaje u kodu, ali Measurement ID trenutno nije upisan.
+Novi ID se kasnije stavlja u adminu, na tržištu, u polje Measurement ID-jevi.
 
 Hrvatska i Slovenija na početku imaju istu ponudu kao Srbija.
 Posle toga se menjaju odvojeno, kroz admin.

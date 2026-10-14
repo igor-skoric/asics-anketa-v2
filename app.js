@@ -2,7 +2,7 @@ let step=0, answers=[], products=[], copy=null;
 let resultGender='all', variantSelections={};
 const view=document.querySelector('#view');
 // Posle deploya nalepi Measurement ID (Admin → Data streams), npr. 'G-ABC123XYZ'.
-const GA_MEASUREMENT_IDS=['G-NYDZMQX8C8','G-G04L3G3962'];
+const GA_MEASUREMENT_IDS=[];
 const LOCALE_VERSION='1';
 const OFFER_CHECKED='29.09.2026';
 const stepNames=['podloga','prioritet','detalji','rezultat'];

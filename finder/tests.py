@@ -49,8 +49,9 @@ class MarketRoutingTests(TestCase):
         slovenia = self.client.get("/si/")
         for response in (serbia, croatia, slovenia):
             self.assertEqual(response.status_code, 200)
-            self.assertContains(response, "G-NYDZMQX8C8")
-            self.assertContains(response, "G-G04L3G3962")
+            self.assertNotContains(response, "G-NYDZMQX8C8")
+            self.assertNotContains(response, "G-G04L3G3962")
+            self.assertContains(response, '"gaIds": []')
             self.assertContains(response, "METASPEED SKY TOKYO")
         self.assertContains(serbia, "PRONAĐI SVOJU PATIKU")
         self.assertContains(croatia, "PRONAĐI SVOJE TENISICE")
@@ -70,8 +71,8 @@ class MarketRoutingTests(TestCase):
         script = Path(settings.BASE_DIR, "static", "app.js").read_text(encoding="utf-8")
         self.assertIn("a_opis", script)
         self.assertIn("function track(", script)
-        self.assertIn("G-NYDZMQX8C8", script)
-        self.assertIn("G-G04L3G3962", script)
+        self.assertNotIn("G-NYDZMQX8C8", script)
+        self.assertNotIn("G-G04L3G3962", script)
         self.assertIn("korak_", script)
         self.assertIn("rezultat_", script)
 

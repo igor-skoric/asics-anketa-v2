@@ -3,7 +3,7 @@ let resultGender='all', variantSelections={};
 const view=document.querySelector('#view');
 const finderConfig=window.SHOE_FINDER_CONFIG||{};
 // Isti Measurement ID-jevi kao na statičkom sajtu. Tržište može da prosledi svoje preko SHOE_FINDER_CONFIG.
-const GA_MEASUREMENT_IDS=(Array.isArray(finderConfig.gaIds)&&finderConfig.gaIds.length)?finderConfig.gaIds:['G-NYDZMQX8C8','G-G04L3G3962'];
+const GA_MEASUREMENT_IDS=(Array.isArray(finderConfig.gaIds)?finderConfig.gaIds:[]);
 const LOCALE_VERSION='1';
 const OFFER_CHECKED=finderConfig.offerChecked||'29.09.2026';
 const stepNames=['podloga','prioritet','detalji','rezultat'];
