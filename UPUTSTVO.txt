@@ -24,13 +24,18 @@ Hrvatska i Slovenija na početku imaju istu ponudu kao Srbija.
 Posle toga se menjaju odvojeno, kroz admin.
 
 CPANEL
-U cPanelu: Setup Python App.
-- Python 3.12
-- Application root: folder u kome je manage.py
-- Application startup file: passenger_wsgi.py
-- Application Entry point: application
+U cPanelu: Setup Python App, Python 3.12.
+Application root je folder u kome je manage.py.
+Startup fajl ostaje passenger_wsgi.py koji cPanel sam napravi. Ne dodaje se drugi.
 
-Posle kreiranja aplikacije, u njenom interfejsu pokreni:
+U taj postojeći fajl stavi samo ovo, da učita Django:
+
+  import os, sys
+  sys.path.insert(0, os.path.dirname(__file__))
+  os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
+  from config.wsgi import application
+
+Posle toga, u interfejsu aplikacije pokreni:
   pip install -r requirements.txt
   python manage.py migrate
   python manage.py collectstatic --noinput
