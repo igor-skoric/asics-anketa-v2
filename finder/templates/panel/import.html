@@ -1,0 +1,25 @@
+{% extends "panel/base.html" %}
+{% block title %}Uvoz · {{ market.country }}{% endblock %}
+{% block content %}
+<p class="eyebrow"><a class="site-login" href="{% url 'panel_shoes' market.code %}">{{ market.country }}</a></p>
+<h1>Uvezi izmene</h1>
+<p class="panel-lead">Učitaj .xlsx izvoz za <strong>{{ market.country }}</strong>. Sledeći korak je pregled izmena pre upisa. Uvoz ne dira druga tržišta i ne menja slike.</p>
+<nav class="market-switch" aria-label="Tržišta">
+  {% for item in markets %}<a href="{% url 'panel_catalog_import' item.code %}" {% if item.code == market.code %}aria-current="page"{% endif %}>{{ item.country }}</a>{% endfor %}
+</nav>
+<form class="panel-form" method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  <label for="id_workbook">Excel fajl (.xlsx)</label>
+  <input id="id_workbook" type="file" name="workbook" accept=".xlsx,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" required>
+  <div class="controls" style="justify-content:flex-start;margin-top:24px">
+    <button class="primary panel-btn" type="submit">
+      {% include "panel/_ico.html" with name="search" %}
+      Pregledaj izmene
+    </button>
+    <a class="reset panel-btn" href="{% url 'panel_shoes' market.code %}">
+      {% include "panel/_ico.html" with name="back" %}
+      Nazad
+    </a>
+  </div>
+</form>
+{% endblock %}

@@ -1,6 +1,6 @@
 from django.templatetags.static import static
 
-from .models import Market, Recommendation
+from .models import AnswerPath, Market, Recommendation
 
 
 def public_src(photo, filename):
@@ -15,12 +15,13 @@ def public_src(photo, filename):
 
 
 def public_catalog(code):
+    """Živi katalog iz baze. Prazna preporuka ostaje prazna — bez JSON/JS fallbacka."""
     market = Market.objects.filter(pk=code).first()
     if market is None:
         return None
-    shoes = market.shoes.prefetch_related("variants").all()
+    shoes = market.shoes.filter(available=True).prefetch_related("variants").all()
     products = [_shoe_payload(shoe) for shoe in shoes]
-    recommendations = {}
+    recommendations = {path.pk: {"shoes": [], "extras": []} for path in AnswerPath.objects.all()}
     rows = (
         Recommendation.objects.filter(market=market)
         .select_related("path")
@@ -28,8 +29,16 @@ def public_catalog(code):
     )
     for row in rows:
         recommendations[row.path_id] = {
-            "shoes": [item.shoe.key for item in row.items.all() if item.placement == "main"],
-            "extras": [item.shoe.key for item in row.items.all() if item.placement == "extra"],
+            "shoes": [
+                item.shoe.key
+                for item in row.items.all()
+                if item.placement == "main" and item.shoe.available
+            ],
+            "extras": [
+                item.shoe.key
+                for item in row.items.all()
+                if item.placement == "extra" and item.shoe.available
+            ],
         }
     return {
         "products": products,
@@ -37,6 +46,19 @@ def public_catalog(code):
         "ga_ids": market.ga_ids,
         "offer_checked": market.offer_checked,
     }
+
+
+def paths_missing_active_shoes(market):
+    """Putanje bez bar jedne dostupne patike u glavnoj ili dodatnoj ponudi."""
+    catalog = public_catalog(market.code if hasattr(market, "code") else market)
+    if not catalog:
+        return []
+    missing = []
+    labels = {path.pk: path.label for path in AnswerPath.objects.all()}
+    for path_id, spec in catalog["recommendations"].items():
+        if not spec["shoes"] and not spec["extras"]:
+            missing.append({"code": path_id, "label": labels.get(path_id, path_id)})
+    return missing
 
 
 def _shoe_payload(shoe):
@@ -61,5 +83,6 @@ def _shoe_payload(shoe):
         "filename": shoe.filename,
         "image_src": public_src(shoe.photo, shoe.filename),
         "available": shoe.available,
+        "analytics_code": shoe.analytics_code,
         "variants": variants,
     }

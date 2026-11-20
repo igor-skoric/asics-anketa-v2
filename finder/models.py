@@ -1,7 +1,8 @@
+from django.conf import settings
 from django.db import models
 from django.utils.text import slugify
 
-from .paths import ANSWER_PATHS
+from .paths import ANSWER_PATHS, SHOE_EVENT_CODES
 
 
 class Market(models.Model):
@@ -9,7 +10,11 @@ class Market(models.Model):
     country = models.CharField("Država", max_length=40)
     locale = models.CharField("Jezik", max_length=8)
     offer_checked = models.CharField("Ponuda proverena", max_length=20)
-    ga_ids = models.JSONField("Measurement ID-jevi", default=list)
+    ga_ids = models.JSONField(
+        "Measurement ID-jevi",
+        default=list,
+        help_text='Lista, npr. ["G-XXXXXXXXXX"]. Prazno isključuje slanje. Sva tri tržišta šalju iste parametre; država ide u a_drzava.',
+    )
     store_domain = models.URLField("Prodavnica", max_length=200, blank=True)
 
     class Meta:
@@ -19,6 +24,28 @@ class Market(models.Model):
 
     def __str__(self):
         return self.country
+
+
+class EditorProfile(models.Model):
+    user = models.OneToOneField(
+        settings.AUTH_USER_MODEL,
+        verbose_name="Nalog",
+        related_name="editor_profile",
+        on_delete=models.CASCADE,
+    )
+    markets = models.ManyToManyField(
+        Market,
+        verbose_name="Tržišta",
+        related_name="editors",
+        blank=True,
+    )
+
+    class Meta:
+        verbose_name = "Profil urednika"
+        verbose_name_plural = "Profili urednika"
+
+    def __str__(self):
+        return self.user.get_username()
 
 
 class AnswerPath(models.Model):
@@ -37,12 +64,18 @@ class AnswerPath(models.Model):
 
 class Shoe(models.Model):
     market = models.ForeignKey(Market, verbose_name="Tržište", related_name="shoes", on_delete=models.CASCADE)
-    key = models.SlugField("Kod", max_length=64, blank=True, help_text="Kratak kod, npr. gel-nimbus. Prazno polje se popuni iz naziva. Kod postojećeg modela nemoj menjati: analitika ga koristi.")
+    key = models.SlugField("Kod", max_length=64, blank=True, help_text="Kratak kod, npr. gel-nimbus. Prazno polje se popuni iz naziva. Kod postojećeg modela nemoj menjati: parametar a_kod ga koristi.")
     family_name = models.CharField("Naziv na kartici", max_length=80, help_text="Kako se model zove na rezultatu, npr. GEL-NIMBUS™.")
     model_name = models.CharField("Puno ime modela", max_length=80, help_text="Npr. GEL-NIMBUS 28.")
     filename = models.CharField("Slika iz assets", max_length=200, blank=True, help_text="Postojeća slika, npr. gel-nimbus.webp. Nova otpremljena slika ima prednost.")
     photo = models.ImageField("Nova slika", upload_to="shoes/", blank=True)
     available = models.BooleanField("Prikazana u ponudi", default=True)
+    analytics_code = models.SlugField(
+        "Kod u statistici",
+        max_length=6,
+        blank=True,
+        help_text="Kratka oznaka u imenu Google Analytics događaja. Popuni se sama i ista je za isti model na sva tri tržišta.",
+    )
 
     class Meta:
         verbose_name = "Patika"
@@ -50,6 +83,7 @@ class Shoe(models.Model):
         ordering = ["market", "family_name"]
         constraints = [
             models.UniqueConstraint(fields=["market", "key"], name="unique_shoe_key_per_market"),
+            models.UniqueConstraint(fields=["market", "analytics_code"], name="unique_shoe_analytics_code_per_market"),
         ]
 
     def __str__(self):
@@ -70,7 +104,28 @@ class Shoe(models.Model):
                 if self.pk:
                     taken = taken.exclude(pk=self.pk)
             self.key = candidate
+        self._assign_analytics_code()
         super().save(*args, **kwargs)
+
+    def _assign_analytics_code(self):
+        if self.analytics_code or self.market_id is None:
+            return
+        known = SHOE_EVENT_CODES.get(self.key or "")
+        taken = Shoe.objects.filter(market_id=self.market_id)
+        if self.pk:
+            taken = taken.exclude(pk=self.pk)
+        if known and not taken.filter(analytics_code=known).exists():
+            self.analytics_code = known
+            return
+        raw = slugify(self.key or self.family_name or "patika").replace("-", "")
+        base = (raw[:6] or "patika")
+        candidate = base
+        number = 2
+        while taken.filter(analytics_code=candidate).exists():
+            suffix = str(number)
+            candidate = f"{base[: 6 - len(suffix)]}{suffix}"
+            number += 1
+        self.analytics_code = candidate[:6]
 
 
 class Variant(models.Model):

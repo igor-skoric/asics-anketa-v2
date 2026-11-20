@@ -1,0 +1,41 @@
+{% load static %}
+{% get_static_prefix as STATIC_PREFIX %}
+<fieldset class="variant-card{% if not form.instance.pk %} variant-card-new{% endif %}">
+  {% for hidden in form.hidden_fields %}{{ hidden }}{% endfor %}
+  <div class="variant-card-top">
+    <span class="variant-index">{% if form.instance.pk %}#{{ form.instance.pk }}{% else %}Nova{% endif %}</span>
+    {% if form.instance.pk %}
+    <span class="variant-meta">{{ form.instance.get_gender_display }} · {{ form.instance.color }} · {{ form.instance.sku }}</span>
+    {% else %}
+    <span class="variant-meta">Nova varijanta</span>
+    {% endif %}
+    {% if form.DELETE %}
+    <div class="variant-card-actions">
+      <span class="visually-hidden">{{ form.DELETE }}</span>
+      <button class="variant-delete" type="button" data-variant-remove>
+        {% include "panel/_ico.html" with name="trash" %}
+        <span>Ukloni</span>
+      </button>
+      <button class="variant-undo" type="button" data-variant-undo hidden>Vrati</button>
+    </div>
+    {% endif %}
+  </div>
+  <div class="variant-card-grid">
+    <div class="variant-card-photo">
+      {% if form.instance.photo %}
+      {% include "panel/_photo_drop.html" with field=form.photo clear_field=form.clear_photo preview_url=form.instance.photo.url size="sm" %}
+      {% elif form.instance.filename %}
+      {% include "panel/_photo_drop.html" with field=form.photo clear_field=form.clear_photo preview_url=STATIC_PREFIX|add:"assets/"|add:form.instance.filename size="sm" %}
+      {% else %}
+      {% include "panel/_photo_drop.html" with field=form.photo clear_field=form.clear_photo preview_url="" size="sm" %}
+      {% endif %}
+    </div>
+    <div class="variant-card-fields">
+      <label><span class="field-label">Redosled</span>{{ form.position }}{{ form.position.errors }}</label>
+      <label><span class="field-label">Pol</span>{{ form.gender }}{{ form.gender.errors }}</label>
+      <label><span class="field-label">Boja</span>{{ form.color }}{{ form.color.errors }}</label>
+      <label><span class="field-label">Šifra (SKU)</span>{{ form.sku }}{{ form.sku.errors }}</label>
+      <label class="variant-url"><span class="field-label">Link</span>{{ form.store_url }}{{ form.store_url.errors }}</label>
+    </div>
+  </div>
+</fieldset>

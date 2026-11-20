@@ -20,8 +20,29 @@ Prevod ostaje u finder\data\rs|hr|si\copy.json.
 Analitika (događaji i a_opis) ostaje u kodu, ali Measurement ID trenutno nije upisan.
 Novi ID se kasnije stavlja u adminu, na tržištu, u polje Measurement ID-jevi.
 
-Hrvatska i Slovenija na početku imaju istu ponudu kao Srbija.
-Posle toga se menjaju odvojeno, kroz admin.
+Panel zaposlenih: http://127.0.0.1:8000/panel/
+Isti nalog kao vlasnik (superuser) ili urednik iz grupe „urednici“.
+Posle početne instalacije baza je izvor kataloga. Urednici rade samo kroz panel
+(jedna patika ili Excel uvoz). Ne treba terminal ni ručno menjanje JSON-a.
+
+Čista instalacija kataloga:
+  1. python manage.py migrate
+     (seed stavlja istu RS ponudu na rs/hr/si)
+  2. Početni uvoz HR i SI iz links.json u bazu (jednom):
+       python manage.py sync_store_catalog si --no-scrape --replace-catalog
+       python manage.py sync_store_catalog hr --no-scrape --replace-catalog
+     Sa scrapom Sport Visiona izostavi --no-scrape.
+  3. RS nema finder\data\rs\links.json. RS ostaje iz seed-a (products.json)
+     i dalje se menja samo kroz panel.
+
+Redovan deploy na postojećoj bazi: pip install -r requirements.txt,
+migrate, collectstatic. Ne pokreći sync ni --replace-catalog.
+
+Rutinski sync (bez --replace-catalog) samo osvežava products.json / datum;
+ne dira živi katalog. Namerni reset: sync uz --replace-catalog.
+
+Uputstvo za urednike (jedna patika / Excel): PANEL_UPUTSTVO.txt
+Pregled ankete: ANKETA.md
 
 CPANEL
 U cPanelu: Setup Python App, Python 3.12.

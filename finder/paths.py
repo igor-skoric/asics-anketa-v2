@@ -22,10 +22,32 @@ DEFAULT_SHOES = {
 
 TRAIL_EXTRA = "blazeblast"
 
+# Kratke oznake u imenu Google Analytics događaja (limit 40 znakova).
+# Isti kod važi na sva tri tržišta. Posle objave se ne menja.
+SHOE_EVENT_CODES = {
+    "metaspeed": "meta",
+    "magic-speed": "magic",
+    "superblast": "super",
+    "megablast": "mega",
+    "novablast": "nova",
+    "gel-nimbus": "nimbus",
+    "gel-cumulus": "cumul",
+    "gel-kayano": "kayano",
+    "gt-2000": "gt2000",
+    "trabuco-max": "trabu",
+    "fujispeed": "fuji",
+    "blazeblast": "blaze",
+    "metafuji-trail": "mfuji",
+    "noosa-tri": "noosa",
+    "dynablast": "dyna",
+    "versablast": "versa",
+}
+
 FAMILY_NAMES = {
     "metaspeed": "METASPEED™",
     "magic-speed": "MAGIC SPEED™",
     "superblast": "SUPERBLAST™",
+    "megablast": "MEGABLAST™",
     "novablast": "NOVABLAST™",
     "gel-nimbus": "GEL-NIMBUS™",
     "gel-cumulus": "GEL-CUMULUS™",

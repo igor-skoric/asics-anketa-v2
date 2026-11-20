@@ -34,10 +34,13 @@ def finder(request, market):
     if not asset_base.endswith("/"):
         asset_base += "/"
     catalog = public_catalog(market)
-    products = catalog["products"] if catalog else data["products"]
-    recommendations = catalog["recommendations"] if catalog else {}
-    ga_ids = catalog["ga_ids"] if catalog else data["ga_ids"]
-    offer_checked = catalog["offer_checked"] if catalog else data["offer_checked"]
+    # Posle migrate/seed baza je izvor kataloga. JSON ostaje samo za copy i početni uvoz.
+    if catalog is None:
+        raise Http404("Nepoznato tržište.")
+    products = catalog["products"]
+    recommendations = catalog["recommendations"]
+    ga_ids = catalog["ga_ids"]
+    offer_checked = catalog["offer_checked"]
     response = render(
         request,
         "finder/index.html",

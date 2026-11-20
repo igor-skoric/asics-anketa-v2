@@ -1,0 +1,20 @@
+{% extends "panel/base.html" %}
+{% block title %}Tržišta · {{ person.username }}{% endblock %}
+{% block content %}
+<p class="eyebrow">NALOG</p>
+<h1>{{ person.username }}</h1>
+<p class="panel-lead">Urednik vidi samo označena tržišta. Bez pristupa /admin/.</p>
+<form class="panel-form panel-section" method="post">
+  {% csrf_token %}
+  <div class="panel-section-body">
+    <label>{{ form.markets.label }}
+      {{ form.markets }}
+      {{ form.markets.errors }}
+    </label>
+    <div class="controls" style="justify-content:flex-start;margin-top:20px">
+      <button class="primary" type="submit">Sačuvaj</button>
+      <a class="reset" href="{% url 'panel_users' %}">Nazad</a>
+    </div>
+  </div>
+</form>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "panel/base.html" %}
+{% block title %}Prijava{% endblock %}
+{% block content %}
+<section class="panel-narrow">
+  <p class="eyebrow">PANEL</p>
+  <h1>Prijava</h1>
+  <p class="panel-lead">Isti ulaz za vlasnika i za zaposlene. Posle prijave mogu da se menjaju patike za Srbiju, Hrvatsku i Sloveniju.</p>
+  {% if error %}<p class="panel-error">{{ error }}</p>{% endif %}
+  <form class="panel-form" method="post" action="{% url 'panel_login' %}">
+    {% csrf_token %}
+    {% if request.GET.next %}<input type="hidden" name="next" value="{{ request.GET.next }}">{% endif %}
+    <label for="username">Korisničko ime</label>
+    <input id="username" name="username" value="{{ username }}" autocomplete="username" autofocus required>
+    <label for="password">Lozinka</label>
+    <input id="password" name="password" type="password" autocomplete="current-password" required>
+    <div class="controls"><span class="hint">Nalog otvara vlasnik.</span><button class="primary" type="submit">Uđi</button></div>
+  </form>
+</section>
+{% endblock %}

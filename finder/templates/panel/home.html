@@ -1,0 +1,16 @@
+{% extends "panel/base.html" %}
+{% block title %}Tržišta{% endblock %}
+{% block content %}
+<p class="eyebrow">PATIKE</p>
+<h1>Izaberi tržište</h1>
+<p class="panel-lead">Vidiš samo tržišta koja su ti dodeljena. Izmene važe samo za državu koju otvoriš.</p>
+{% if markets %}
+<div class="choices" style="--columns:3">
+  {% for market in markets %}
+  <a class="choice" href="{% url 'panel_shoes' market.code %}"><span class="choice-top"><span>0{{ forloop.counter }}</span></span><span class="choice-copy"><span class="choice-title">{{ market.country }}</span><span class="choice-description">/{{ market.code }}/</span></span></a>
+  {% endfor %}
+</div>
+{% else %}
+<p class="panel-alert">Nemaš dodeljeno nijedno tržište. Traži od vlasnika da ti otvori pristup.</p>
+{% endif %}
+{% endblock %}

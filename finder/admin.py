@@ -1,12 +1,16 @@
 from django.contrib import admin
 from django.core.exceptions import ValidationError
 from django.forms.models import BaseInlineFormSet
+from django.template.response import TemplateResponse
+from django.urls import path
 
+from .analytics import EVENT_NAMES, EVENT_PARAMETERS, USER_PROPERTY
 from .models import Market, Recommendation, RecommendationItem, Shoe, Variant
 
 admin.site.site_header = "ASICS Shoe Finder"
 admin.site.site_title = "Shoe Finder"
-admin.site.index_title = "Patike po tržištu i kombinaciji odgovora"
+admin.site.index_title = "Patike, ponude i statistika ankete"
+admin.site.index_template = "admin/finder_dashboard.html"
 
 
 class VariantInline(admin.TabularInline):
@@ -60,12 +64,13 @@ class RecommendationItemInline(admin.TabularInline):
 
 @admin.register(Shoe)
 class ShoeAdmin(admin.ModelAdmin):
-    list_display = ("family_name", "model_name", "market", "variant_count")
-    list_filter = ("market",)
-    search_fields = ("family_name", "model_name", "key", "market__country")
+    list_display = ("family_name", "model_name", "market", "analytics_code", "available", "variant_count")
+    list_filter = ("market", "available")
+    search_fields = ("family_name", "model_name", "key", "analytics_code", "market__country")
     inlines = [VariantInline]
+    readonly_fields = ("analytics_code",)
     fieldsets = (
-        (None, {"fields": ("market", "family_name", "model_name", "key", "available")}),
+        (None, {"fields": ("market", "family_name", "model_name", "key", "analytics_code", "available")}),
         ("Slika", {"fields": ("photo", "filename")}),
     )
 
@@ -100,3 +105,45 @@ class MarketAdmin(admin.ModelAdmin):
 
     def has_delete_permission(self, request, obj=None):
         return False
+
+
+def statistics_view(request):
+    markets = []
+    for market in Market.objects.all():
+        markets.append(
+            {
+                "market": market,
+                "ga": list(market.ga_ids or []),
+                "shoes": list(
+                    market.shoes.order_by("family_name").values(
+                        "family_name",
+                        "model_name",
+                        "key",
+                        "analytics_code",
+                        "available",
+                    )
+                ),
+            }
+        )
+    context = {
+        **admin.site.each_context(request),
+        "title": "Parametri statistike",
+        "parameters": EVENT_PARAMETERS,
+        "events": EVENT_NAMES,
+        "user_property": USER_PROPERTY,
+        "markets": markets,
+    }
+    return TemplateResponse(request, "admin/finder/stats.html", context)
+
+
+_original_get_urls = admin.site.get_urls
+
+
+def _admin_urls():
+    custom = [
+        path("statistika/", admin.site.admin_view(statistics_view), name="finder_stats"),
+    ]
+    return custom + _original_get_urls()
+
+
+admin.site.get_urls = _admin_urls

@@ -33,11 +33,11 @@
       "intro": "Izberi podlago, na kateri preživiš največ časa.",
       "options": {
         "road": {
-          "label": "Asfalt / beton",
+          "label": "Asfalt / beton, urejen makadam (PST)",
           "description": "Ulice, nabrežja in mestne steze."
         },
         "trail": {
-          "label": "Gozd / makadam / hribi",
+          "label": "Gozd, grobi makadam, hribi",
           "description": "Tek v naravi, zunaj asfaltiranih poti."
         }
       }

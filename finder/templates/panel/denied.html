@@ -1,0 +1,9 @@
+{% extends "panel/base.html" %}
+{% block title %}Nema pristupa{% endblock %}
+{% block content %}
+<section class="panel-narrow">
+  <h1>Nema pristupa</h1>
+  <p class="panel-lead">{{ message }}</p>
+  <form method="post" action="{% url 'panel_logout' %}">{% csrf_token %}<button class="primary" type="submit">Odjavi se</button></form>
+</section>
+{% endblock %}

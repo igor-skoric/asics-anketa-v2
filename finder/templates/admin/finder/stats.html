@@ -1,0 +1,109 @@
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+<div id="content-main">
+  <p>Anketa na <code>/rs/</code>, <code>/hr/</code> i <code>/si/</code> šalje isti skup događaja i istih parametara. Država se ne meša u ime događaja, nego ide u <code>a_drzava</code> (<code>rs</code>, <code>hr</code>, <code>si</code>) i u svojstvo korisnika <code>{{ user_property.name }}</code>. {{ user_property.meaning }}</p>
+  <p>Tekst odgovora u <code>a_opis</code> prati jezik ekrana. Kodovi odgovora, putanja i patika ostaju isti, pa se tri države porede po <code>a_drzava</code> uz isto ime događaja. Pol u analitici ostaje Muške / Ženske / Unisex.</p>
+  <p>Da bi parametri bili kolone u izveštaju: Admin → Data display → Custom definitions → Create custom dimension, opseg Event, a u Event parameter tačno ime iz tabele. <code>a_opis</code> već treba da postoji kao dimenzija Opis. Measurement ID se upisuje na tržištu. Prazna lista znači da se sa tog tržišta ništa ne šalje.</p>
+
+  <div class="module">
+    <table style="width:100%">
+      <caption>Tržišta</caption>
+      <thead>
+        <tr>
+          <th>Država</th>
+          <th>Kod</th>
+          <th>Measurement ID</th>
+          <th>Patike</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in markets %}
+        <tr>
+          <th scope="row"><a href="{% url 'admin:finder_market_change' row.market.code %}">{{ row.market.country }}</a></th>
+          <td><code>{{ row.market.code }}</code></td>
+          <td>{% if row.ga %}{{ row.ga|join:", " }}{% else %}nije podešeno — događaji se ne šalju{% endif %}</td>
+          <td>{{ row.shoes|length }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="module">
+    <table style="width:100%">
+      <caption>Parametri</caption>
+      <thead>
+        <tr>
+          <th>Parametar</th>
+          <th>Gde</th>
+          <th>Značenje</th>
+          <th>Primer</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in parameters %}
+        <tr>
+          <th scope="row"><code>{{ item.name }}</code></th>
+          <td>{{ item.scope }}</td>
+          <td>{{ item.meaning }}</td>
+          <td><code>{{ item.example }}</code></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="module">
+    <table style="width:100%">
+      <caption>Imena događaja</caption>
+      <thead>
+        <tr>
+          <th>Ime</th>
+          <th>Kad</th>
+          <th>Parametri</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in events %}
+        <tr>
+          <th scope="row"><code>{{ item.name }}</code></th>
+          <td>{{ item.when }}</td>
+          <td><code>{{ item.params }}</code></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  {% for row in markets %}
+  <div class="module">
+    <table style="width:100%">
+      <caption>{{ row.market.country }} — kodovi patika u događaju</caption>
+      <thead>
+        <tr>
+          <th>Kartica</th>
+          <th>Model</th>
+          <th>Kod</th>
+          <th>U događaju</th>
+          <th>U ponudi</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for shoe in row.shoes %}
+        <tr>
+          <td>{{ shoe.family_name }}</td>
+          <td>{{ shoe.model_name }}</td>
+          <td><code>{{ shoe.key }}</code></td>
+          <td><code>{{ shoe.analytics_code }}</code></td>
+          <td>{% if shoe.available %}da{% else %}ne{% endif %}</td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="5">Nema patika.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

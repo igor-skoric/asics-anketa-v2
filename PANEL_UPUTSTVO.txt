@@ -1,0 +1,23 @@
+ASICS SHOE FINDER — UPUTSTVO ZA UREDNIKE
+
+Prijava: /panel/  (nalog iz grupe „urednici“ ili vlasnik)
+Urednik vidi samo dodeljena tržišta. /admin/ je samo za vlasnika (superuser).
+Vlasnik u /panel/nalozi/ otvara naloge i bira tržišta (rs/hr/si).
+
+Jedna patika
+1. Izaberi tržište (Srbija / Hrvatska / Slovenija) koje ti je otvoreno.
+2. Traži po nazivu ili SKU-u, ili otvori „Nova patika“.
+3. Unesi naziv, varijante (pol, boja, šifra, link), sliku po želji.
+4. Pod „Gde se pojavljuje“ označi glavni ili dodatni model na putanjama.
+5. Da skloniš model iz ankete bez brisanja: isključi „Prikazana u anketi“.
+6. Sačuvaj. Lista pokazuje putanje koje ostanu bez aktivne preporuke.
+
+Više izmena odjednom (Excel)
+1. Na stranici tržišta: „Preuzmi katalog (.xlsx)“.
+2. Menjaj listove Patike, Varijante, Preporuke. Čitaj list Uputstvo.
+3. ID kolone ne menjaj kad menjaš naziv ili šifru (sprečava duplikat).
+4. Nova patika: prazan ID + Ref (npr. NOVO-1); isti Ref u Varijante/Preporuke.
+5. Prazna ćelija = bez izmene. Izostavljen red ne briše. Isključenje: Prikazana=ne.
+   Skidanje preporuke: Uloga=ukloni.
+6. „Uvezi izmene“ → pregled → „Potvrdi uvoz“. Greške se prikažu po listu/redu/koloni.
+7. Uvoz važi samo za izabrano tržište. Slike se ne menjaju Excelom (forma patike).

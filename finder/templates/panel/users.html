@@ -1,0 +1,48 @@
+{% extends "panel/base.html" %}
+{% block title %}Nalozi{% endblock %}
+{% block content %}
+<p class="eyebrow">PRISTUP</p>
+<h1>Nalozi</h1>
+<p class="panel-lead">Urednici ulaze samo na /panel/ i samo na dodeljena tržišta. Glavni /admin/ ostaje isključivo za vlasnika (superuser).</p>
+{% if form.non_field_errors %}<p class="panel-error">{{ form.non_field_errors|join:" " }}</p>{% endif %}
+<form class="panel-form panel-section" method="post">
+  {% csrf_token %}
+  <div class="panel-section-head"><h2>Novi urednik</h2><p>Obavezno izaberi bar jedno tržište.</p></div>
+  <div class="panel-section-body panel-fields">
+    {% for field in form %}
+    <label for="{{ field.id_for_label }}">{{ field.label }}
+      {{ field }}
+      {% if field.help_text %}<span class="hint">{{ field.help_text }}</span>{% endif %}
+      {{ field.errors }}
+    </label>
+    {% endfor %}
+    <div class="controls"><span class="hint">Lozinka ima najmanje 8 znakova. Nalog nije staff.</span><button class="primary" type="submit">Otvori nalog</button></div>
+  </div>
+</form>
+<ul class="account-list">
+  {% for person in people %}
+  <li>
+    <div>
+      <strong>{{ person.username }}</strong>
+      <span>
+        {% if person.first_name %}{{ person.first_name }} · {% endif %}
+        {% if person.is_superuser %}vlasnik{% else %}urednik{% endif %}
+        {% if not person.is_active %} · isključen{% endif %}
+        {% if not person.is_superuser %}
+          ·
+          {% with markets=person.editor_profile.markets.all %}
+            {% if markets %}{% for m in markets %}{{ m.code }}{% if not forloop.last %}, {% endif %}{% endfor %}{% else %}bez tržišta{% endif %}
+          {% endwith %}
+        {% endif %}
+      </span>
+    </div>
+    {% if not person.is_superuser %}
+    <div class="account-actions">
+      <a class="site-login" href="{% url 'panel_user_markets' person.pk %}">Tržišta</a>
+      <form method="post" action="{% url 'panel_user_active' person.pk %}">{% csrf_token %}<button class="reset" type="submit">{% if person.is_active %}Isključi{% else %}Uključi{% endif %}</button></form>
+    </div>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,24 @@
+<div class="photo-drop{% if size == 'sm' %} photo-drop-sm{% endif %}{% if preview_url %} has-image{% endif %}" data-photo-drop>
+  {{ field }}
+  {% if clear_field %}<span class="visually-hidden">{{ clear_field }}</span>{% endif %}
+  <div class="photo-drop-surface" tabindex="0" role="button" aria-label="Slika — klikni ili prevuci">
+    <img class="photo-drop-preview" data-photo-preview src="{{ preview_url }}" alt="" {% if not preview_url %}hidden{% endif %}>
+    <div class="photo-drop-empty" data-photo-empty {% if preview_url %}hidden{% endif %}>
+      {% include "panel/_ico.html" with name="image" %}
+      <strong>Klikni ili prevuci sliku</strong>
+      <span>PNG, JPG ili WEBP</span>
+    </div>
+    <div class="photo-drop-overlay" data-photo-overlay hidden>
+      <button type="button" class="photo-drop-action" data-photo-replace>
+        {% include "panel/_ico.html" with name="edit" %}
+        Zameni
+      </button>
+      <button type="button" class="photo-drop-action photo-drop-action-danger" data-photo-remove>
+        {% include "panel/_ico.html" with name="trash" %}
+        Ukloni
+      </button>
+      <button type="button" class="photo-drop-action photo-drop-action-ghost" data-photo-cancel>Otkaži</button>
+    </div>
+  </div>
+  {% if field.errors %}<div class="panel-error">{{ field.errors }}</div>{% endif %}
+</div>

@@ -1,0 +1,26 @@
+{% extends "admin/index.html" %}
+
+{% block content %}
+<div id="content-main">
+  <div class="module">
+    <table>
+      <caption>
+        <a href="{% url 'admin:finder_stats' %}" class="section">Statistika ankete</a>
+      </caption>
+      <tr>
+        <th scope="row"><a href="{% url 'admin:finder_stats' %}">Parametri za Srbiju, Hrvatsku i Sloveniju</a></th>
+        <td>Isti događaji. Država ide u <code>a_drzava</code>.</td>
+      </tr>
+      <tr>
+        <th scope="row"><a href="{% url 'admin:finder_shoe_changelist' %}">Patike</a></th>
+        <td>Dodavanje, izmena, varijante i link ka prodavnici.</td>
+      </tr>
+      <tr>
+        <th scope="row"><a href="{% url 'admin:finder_recommendation_changelist' %}">Ponude za odgovore</a></th>
+        <td>Koji modeli izlaze na kojoj kombinaciji odgovora.</td>
+      </tr>
+    </table>
+  </div>
+  {% include "admin/app_list.html" with app_list=app_list show_changelinks=True %}
+</div>
+{% endblock %}

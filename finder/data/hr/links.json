@@ -1,0 +1,298 @@
+{
+  "updated": "2026-11-06",
+  "notes": [
+    "HR lista od klijenta koristi konkretne sportvision.rs product URL-ove (isti ID-jevi kao RS katalog).",
+    "SUPERBLAST ostaje u training putanji; MEGABLAST nije u HR listi.",
+    "BLAZEBLAST je trail extra na svih 4 trail putanje."
+  ],
+  "shoes": [
+    {
+      "key": "gel-nimbus",
+      "model_name": "GEL-NIMBUS 28",
+      "family_name": "GEL-NIMBUS™",
+      "filename": "gel-nimbus.webp",
+      "search_url": "https://www.sportvision.hr/proizvodi/asics",
+      "paths": ["road/comfort/soft"],
+      "products": {
+        "men": [
+          "https://www.sportvision.rs/patike/70067852-asics-gel-nimbus-28",
+          "https://www.sportvision.rs/patike/70067922-asics-gel-nimbus-28",
+          "https://www.sportvision.rs/patike/70069535-asics-gel-nimbus-28",
+          "https://www.sportvision.rs/patike/70084767-asics-gel-nimbus-28"
+        ],
+        "women": [
+          "https://www.sportvision.rs/patike/70067837-asics-gel-nimbus-28",
+          "https://www.sportvision.rs/patike/70067887-asics-gel-nimbus-28"
+        ]
+      }
+    },
+    {
+      "key": "gel-cumulus",
+      "model_name": "GEL-CUMULUS 28",
+      "family_name": "GEL-CUMULUS™",
+      "filename": "gel-cumulus.webp",
+      "search_url": "https://www.sportvision.hr/proizvodi/asics",
+      "paths": ["road/comfort/soft"],
+      "products": {
+        "men": [
+          "https://www.sportvision.rs/patike/70073632-asics-gel-cumulus-28",
+          "https://www.sportvision.rs/patike/70090442-asics-gel-cumulus-28"
+        ],
+        "women": [
+          "https://www.sportvision.rs/patike/70073600-asics-gel-cumulus-28",
+          "https://www.sportvision.rs/patike/70084860-asics-gel-cumulus-28"
+        ]
+      }
+    },
+    {
+      "key": "dynablast",
+      "model_name": "DYNABLAST 6",
+      "family_name": "DYNABLAST™",
+      "filename": "dynablast.webp",
+      "search_url": "https://www.sportvision.hr/proizvodi/asics",
+      "paths": ["road/comfort/soft", "road/speed/training"],
+      "products": {
+        "men": [
+          "https://www.sportvision.rs/patike/70090927-asics-dynablast-6",
+          "https://www.sportvision.rs/patike/70095895-asics-dynablast-6"
+        ],
+        "women": [
+          "https://www.sportvision.rs/patike/70095945-asics-dynablast-6"
+        ]
+      }
+    },
+    {
+      "key": "gel-kayano",
+      "model_name": "GEL-KAYANO 33",
+      "family_name": "GEL-KAYANO™",
+      "filename": "gel-kayano.webp",
+      "search_url": "https://www.sportvision.hr/proizvodi/asics",
+      "paths": ["road/comfort/support"],
+      "products": {
+        "men": [
+          "https://www.sportvision.rs/patike/70084722-asics-gel-kayano-33",
+          "https://www.sportvision.rs/patike/70084845-asics-gel-kayano-33",
+          "https://www.sportvision.rs/patike/70084876-asics-gel-kayano-33",
+          "https://www.sportvision.rs/patike/70090427-asics-gel-kayano-33"
+        ],
+        "women": [
+          "https://www.sportvision.rs/patike/70084727-asics-gel-kayano-33",
+          "https://www.sportvision.rs/patike/70084835-asics-gel-kayano-33"
+        ]
+      }
+    },
+    {
+      "key": "gt-2000",
+      "model_name": "GT-2000 14",
+      "family_name": "GT-2000™",
+      "filename": "gt-2000.webp",
+      "search_url": "https://www.sportvision.hr/proizvodi/asics",
+      "paths": ["road/comfort/support"],
+      "products": {
+        "men": [
+          "https://www.sportvision.rs/patike/70067857-asics-gt-2000-14"
+        ],
+        "women": [
+          "https://www.sportvision.rs/patike/70071645-asics-gt-2000-14"
+        ]
+      }
+    },
+    {
+      "key": "superblast",
+      "model_name": "SUPERBLAST 3",
+      "family_name": "SUPERBLAST™",
+      "filename": "superblast.webp",
+      "search_url": "https://www.sportvision.hr/proizvodi/asics",
+      "paths": ["road/speed/training"],
+      "products": {
+        "unisex": [
+          "https://www.sportvision.rs/patike/70084732-asics-superblast-3",
+          "https://www.sportvision.rs/patike/70084855-asics-superblast-3"
+        ]
+      }
+    },
+    {
+      "key": "novablast",
+      "model_name": "NOVABLAST 6",
+      "family_name": "NOVABLAST™",
+      "filename": "novablast.webp",
+      "search_url": "https://www.sportvision.hr/proizvodi/asics",
+      "paths": ["road/speed/training"],
+      "products": {
+        "men": [
+          "https://www.sportvision.rs/patike/70088224-asics-novablast-6",
+          "https://www.sportvision.rs/patike/70090897-asics-novablast-6"
+        ],
+        "women": [
+          "https://www.sportvision.rs/patike/70088214-asics-novablast-6",
+          "https://www.sportvision.rs/patike/70095915-asics-novablast-6"
+        ]
+      }
+    },
+    {
+      "key": "noosa-tri",
+      "model_name": "NOOSA TRI 16",
+      "family_name": "NOOSA TRI™",
+      "filename": "noosa-tri.webp",
+      "search_url": "https://www.sportvision.hr/proizvodi/asics",
+      "paths": ["road/speed/training", "road/speed/race"],
+      "products": {
+        "men": [
+          "https://www.sportvision.rs/patike/70071650-asics-noosa-tri-16",
+          "https://www.sportvision.rs/patike/70090437-asics-noosa-tri-16"
+        ],
+        "women": [
+          "https://www.sportvision.rs/patike/70069490-asics-noosa-tri-16",
+          "https://www.sportvision.rs/patike/70089638-asics-noosa-tri-16"
+        ]
+      }
+    },
+    {
+      "key": "versablast",
+      "model_name": "VERSABLAST 4",
+      "family_name": "VERSABLAST™",
+      "filename": "versablast.webp",
+      "search_url": "https://www.sportvision.hr/proizvodi/asics",
+      "paths": ["road/speed/training"],
+      "products": {
+        "men": [
+          "https://www.sportvision.rs/patike/70026934-asics-versablast-4",
+          "https://www.sportvision.rs/patike/70067822-asics-versablast-4",
+          "https://www.sportvision.rs/patike/70090717-asics-versablast-4"
+        ],
+        "women": [
+          "https://www.sportvision.rs/patike/70067902-asics-versablast-4",
+          "https://www.sportvision.rs/patike/70090277-asics-versablast-4"
+        ]
+      }
+    },
+    {
+      "key": "metaspeed",
+      "model_name": "METASPEED SKY TOKYO",
+      "family_name": "METASPEED™",
+      "filename": "metaspeed.webp",
+      "search_url": "https://www.sportvision.hr/proizvodi/asics",
+      "paths": ["road/speed/race"],
+      "products": {
+        "unisex": [
+          "https://www.sportvision.rs/patike/70088219-asics-metaspeed-sky-tokyo"
+        ]
+      }
+    },
+    {
+      "key": "magic-speed",
+      "model_name": "MAGIC SPEED 5",
+      "family_name": "MAGIC SPEED™",
+      "filename": "magic-speed.webp",
+      "search_url": "https://www.sportvision.hr/proizvodi/asics",
+      "paths": ["road/speed/race"],
+      "products": {
+        "unisex": [
+          "https://www.sportvision.rs/patike/70069445-asics-magic-speed-5",
+          "https://www.sportvision.rs/patike/70084742-asics-magic-speed-5"
+        ]
+      }
+    },
+    {
+      "key": "trabuco-max",
+      "model_name": "TRABUCO MAX 5",
+      "family_name": "TRABUCO MAX™",
+      "filename": "trabuco-max.webp",
+      "search_url": "https://www.sportvision.hr/proizvodi/asics",
+      "paths": ["trail/protection/technical", "trail/protection/smooth"],
+      "products": {
+        "men": [
+          "https://www.sportvision.rs/patike/70071695-asics-trabuco-max-5",
+          "https://www.sportvision.rs/patike/70084712-asics-trabuco-max-5"
+        ],
+        "women": [
+          "https://www.sportvision.rs/patike/70071905-asics-trabuco-max-5",
+          "https://www.sportvision.rs/patike/70084800-asics-trabuco-max-5"
+        ]
+      }
+    },
+    {
+      "key": "blazeblast",
+      "model_name": "BLAZEBLAST",
+      "family_name": "BLAZEBLAST™",
+      "filename": "blazeblast.webp",
+      "search_url": "https://www.sportvision.hr/proizvodi/asics",
+      "paths": [
+        "trail/protection/technical",
+        "trail/protection/smooth",
+        "trail/light/technical",
+        "trail/light/smooth"
+      ],
+      "products": {
+        "men": [
+          "https://www.sportvision.rs/patike/70099342-asics-blazeblast"
+        ],
+        "women": [
+          "https://www.sportvision.rs/patike/70099276-asics-blazeblast"
+        ]
+      }
+    },
+    {
+      "key": "fujispeed",
+      "model_name": "FUJISPEED 4",
+      "family_name": "FUJISPEED™",
+      "filename": "fujispeed.webp",
+      "search_url": "https://www.sportvision.hr/proizvodi/asics",
+      "paths": ["trail/light/technical", "trail/light/smooth"],
+      "products": {
+        "unisex": [
+          "https://www.sportvision.rs/patike/70069187-asics-fuji-spee-4",
+          "https://www.sportvision.rs/patike/70084865-asics-fujispeed-4"
+        ]
+      }
+    },
+    {
+      "key": "metafuji-trail",
+      "model_name": "METAFUJI TRAIL",
+      "family_name": "METAFUJI TRAIL™",
+      "filename": "metafuji-trail.webp",
+      "search_url": "https://www.sportvision.hr/proizvodi/asics",
+      "paths": ["trail/light/technical", "trail/light/smooth"],
+      "products": {
+        "unisex": [
+          "https://www.sportvision.rs/patike/70067832-asics-metafuji-trail"
+        ]
+      }
+    }
+  ],
+  "unavailable": {},
+  "recommendations": {
+    "road/comfort/soft": {
+      "shoes": ["gel-nimbus", "gel-cumulus", "dynablast"],
+      "extras": []
+    },
+    "road/comfort/support": {
+      "shoes": ["gel-kayano", "gt-2000"],
+      "extras": []
+    },
+    "road/speed/training": {
+      "shoes": ["superblast", "novablast", "noosa-tri", "dynablast", "versablast"],
+      "extras": []
+    },
+    "road/speed/race": {
+      "shoes": ["metaspeed", "magic-speed", "noosa-tri"],
+      "extras": []
+    },
+    "trail/protection/technical": {
+      "shoes": ["trabuco-max"],
+      "extras": ["blazeblast"]
+    },
+    "trail/protection/smooth": {
+      "shoes": ["trabuco-max"],
+      "extras": ["blazeblast"]
+    },
+    "trail/light/technical": {
+      "shoes": ["fujispeed", "metafuji-trail"],
+      "extras": ["blazeblast"]
+    },
+    "trail/light/smooth": {
+      "shoes": ["fujispeed", "metafuji-trail"],
+      "extras": ["blazeblast"]
+    }
+  }
+}

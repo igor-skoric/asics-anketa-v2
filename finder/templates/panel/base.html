@@ -1,0 +1,16 @@
+{% load static %}<!doctype html>
+<html lang="sr-Latn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{% block title %}Panel{% endblock %} | ASICS Shoe Finder</title><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b1952'/%3E%3Cpath d='M8 23 16 8h6l-8 15' fill='%23d9fa53'/%3E%3C/svg%3E"><link rel="stylesheet" href="{% static 'style.css' %}?v=27"></head><body class="panel">
+<header><a class="brand" href="{% url 'panel_home' %}"><img class="brand-logo" src="{% static 'assets/asics-logo.png' %}" alt="ASICS" width="361" height="142"><span class="brand-divider" aria-hidden="true"></span><span class="brand-label">Panel</span></a>{% if request.user.is_authenticated %}<div class="header-actions"><span class="header-note">{% if request.user.is_superuser %}Vlasnik{% else %}Urednik{% endif %} · {{ request.user.get_full_name|default:request.user.username }}</span>{% if request.user.is_superuser %}<a class="site-login panel-btn-text" href="{% url 'panel_users' %}">{% include "panel/_ico.html" with name="users" %}Nalozi</a>{% endif %}<form method="post" action="{% url 'panel_logout' %}">{% csrf_token %}<button class="reset panel-btn" type="submit">{% include "panel/_ico.html" with name="logout" %}Odjavi se</button></form></div>{% endif %}</header>
+<main>
+{% if breadcrumbs %}
+<nav class="breadcrumbs" aria-label="Putanja">
+  {% for label, url in breadcrumbs %}
+    {% if not forloop.first %}<span class="breadcrumbs-sep" aria-hidden="true">/</span>{% endif %}
+    {% if url %}<a href="{{ url }}">{{ label }}</a>{% else %}<span aria-current="page">{{ label }}</span>{% endif %}
+  {% endfor %}
+</nav>
+{% endif %}
+{% if messages %}<ul class="panel-notes">{% for message in messages %}<li>{{ message }}</li>{% endfor %}</ul>{% endif %}
+{% block content %}{% endblock %}
+</main>
+</body></html>

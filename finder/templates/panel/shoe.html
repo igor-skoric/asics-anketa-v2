@@ -1,0 +1,130 @@
+{% extends "panel/base.html" %}
+{% load static %}
+{% block title %}{% if shoe.pk %}{{ shoe.family_name }}{% else %}Nova patika{% endif %}{% endblock %}
+{% block content %}
+<div class="panel-edit-top">
+  <div>
+    <h1>{% if shoe.pk %}{{ shoe.family_name }}{% else %}Nova patika{% endif %}</h1>
+    {% if shoe.pk %}
+    <p class="panel-lead panel-lead-tight">Kod <code>{{ shoe.key }}</code> · statistika <code>{{ shoe.analytics_code }}</code> — ostaju ista posle čuvanja.</p>
+    {% else %}
+    <p class="panel-lead panel-lead-tight">Unesi model, bar jednu varijantu i gde se pojavljuje u anketi.</p>
+    {% endif %}
+  </div>
+  <a class="reset panel-btn" href="{% url 'finder' market.code %}" target="_blank" rel="noopener noreferrer">
+    {% include "panel/_ico.html" with name="external" %}
+    Otvori anketu
+  </a>
+</div>
+
+{% if shoe_form.non_field_errors %}<p class="panel-error">{{ shoe_form.non_field_errors|join:" " }}</p>{% endif %}
+
+<form class="panel-form panel-edit" method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+
+  <section class="panel-section">
+    <div class="panel-section-head panel-section-head-row">
+      <div>
+        <h2>Model</h2>
+        <p>Naziv na kartici i da li se vidi u anketi.</p>
+      </div>
+      {% if shoe.pk %}
+      <form class="panel-delete-inline" method="post" action="{% url 'panel_shoe_delete' market.code shoe.pk %}">
+        {% csrf_token %}
+        <div class="panel-delete-actions">
+          <label class="panel-delete-confirm"><input type="checkbox" name="confirm" required> <span>Potvrđujem</span></label>
+          <button class="reset panel-btn panel-btn-danger" type="submit" title="Trajno uklanja patiku sa tržišta {{ market.country }}">
+            {% include "panel/_ico.html" with name="trash" %}
+            Obriši patiku
+          </button>
+        </div>
+      </form>
+      {% endif %}
+    </div>
+    <div class="panel-section-body panel-model-grid">
+      <div class="panel-fields panel-fields-compact">
+        <label for="{{ shoe_form.family_name.id_for_label }}"><span class="field-label">{{ shoe_form.family_name.label }}</span>
+          {{ shoe_form.family_name }}{{ shoe_form.family_name.errors }}
+        </label>
+        <label for="{{ shoe_form.model_name.id_for_label }}"><span class="field-label">{{ shoe_form.model_name.label }}</span>
+          {{ shoe_form.model_name }}{{ shoe_form.model_name.errors }}
+        </label>
+        <label class="panel-check" for="{{ shoe_form.available.id_for_label }}">
+          {{ shoe_form.available }}
+          <span>
+            <strong>{{ shoe_form.available.label }}</strong>
+            <span class="hint">Isključi da sakriješ model bez brisanja.</span>
+          </span>
+        </label>
+      </div>
+      <div class="panel-media">
+        {% get_static_prefix as STATIC_PREFIX %}
+        {% if shoe.photo %}
+        {% include "panel/_photo_drop.html" with field=shoe_form.photo clear_field=shoe_form.clear_photo preview_url=shoe.photo.url %}
+        {% elif shoe.filename %}
+        {% include "panel/_photo_drop.html" with field=shoe_form.photo clear_field=shoe_form.clear_photo preview_url=STATIC_PREFIX|add:"assets/"|add:shoe.filename %}
+        {% else %}
+        {% include "panel/_photo_drop.html" with field=shoe_form.photo clear_field=shoe_form.clear_photo preview_url="" %}
+        {% endif %}
+      </div>
+    </div>
+  </section>
+
+  <section class="panel-section" data-variant-editor data-max="10">
+    <div class="panel-section-head panel-section-head-row">
+      <div>
+        <h2>Varijante</h2>
+        <p>Jedna ispod druge, do 10. Ukloni pa sačuvaj.</p>
+      </div>
+      <button class="reset panel-btn" type="button" data-variant-add>
+        {% include "panel/_ico.html" with name="plus" %}
+        Dodaj varijantu
+      </button>
+    </div>
+    <div class="panel-section-body">
+      {{ variant_formset.management_form }}
+      {% if variant_formset.non_form_errors %}<div class="panel-error">{{ variant_formset.non_form_errors }}</div>{% endif %}
+      <div class="variant-editor" data-variant-list>
+        {% for form in variant_formset %}
+        {% include "panel/_variant_card.html" with form=form %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <template id="variant-empty-template">
+    {% include "panel/_variant_card.html" with form=variant_formset.empty_form %}
+  </template>
+
+  <section class="panel-section">
+    <div class="panel-section-head">
+      <h2>Putanje u anketi</h2>
+      <p>Glavni predlog ili dodatni model. „Ne prikazuj“ skida sa te putanje.</p>
+    </div>
+    <div class="panel-section-body">
+      <div class="place-grid place-grid-2">
+        {% for field in place_form %}
+        <label class="place-row">
+          <span class="place-label">{{ field.label }}</span>
+          {{ field }}
+          {{ field.errors }}
+        </label>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <div class="panel-sticky-actions">
+    <a class="back panel-btn" href="{% url 'panel_shoes' market.code %}">
+      {% include "panel/_ico.html" with name="back" %}
+      Nazad
+    </a>
+    <button class="primary panel-btn" type="submit">
+      {% include "panel/_ico.html" with name="check" %}
+      Sačuvaj izmene
+    </button>
+  </div>
+</form>
+<script src="{% static 'panel-photos.js' %}?v=1" defer></script>
+<script src="{% static 'panel-variants.js' %}?v=2" defer></script>
+{% endblock %}

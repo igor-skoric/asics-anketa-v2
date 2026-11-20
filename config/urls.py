@@ -5,6 +5,7 @@ from django.views.static import serve
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("panel/", include("finder.panel_urls")),
     path("media/<path:path>", serve, {"document_root": settings.MEDIA_ROOT}),
     path("", include("finder.urls")),
 ]

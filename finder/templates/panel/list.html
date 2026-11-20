@@ -1,0 +1,105 @@
+{% extends "panel/base.html" %}
+{% block title %}{{ market.country }}{% endblock %}
+{% block content %}
+<div class="result-top">
+  <div>
+    <h1>Patike</h1>
+    <p class="panel-lead panel-lead-tight">{{ market.country }} · katalog za anketu</p>
+  </div>
+  <a class="primary panel-btn" href="{% url 'panel_shoe_new' market.code %}">
+    {% include "panel/_ico.html" with name="plus" %}
+    Nova patika
+  </a>
+</div>
+
+<div class="panel-toolbar">
+  <nav class="market-switch" aria-label="Tržišta">
+    {% for item in markets %}<a href="{% url 'panel_shoes' item.code %}" {% if item.code == market.code %}aria-current="page"{% endif %}>{{ item.country }}</a>{% endfor %}
+  </nav>
+  <div class="panel-toolbar-actions">
+    <a class="reset panel-btn" href="{% url 'panel_catalog_export' market.code %}">
+      {% include "panel/_ico.html" with name="download" %}
+      Preuzmi katalog
+    </a>
+    <a class="reset panel-btn" href="{% url 'panel_catalog_import' market.code %}">
+      {% include "panel/_ico.html" with name="upload" %}
+      Uvezi izmene
+    </a>
+    <a class="panel-btn-text" href="{% url 'finder' market.code %}" target="_blank" rel="noopener noreferrer">
+      {% include "panel/_ico.html" with name="external" %}
+      Otvori anketu
+    </a>
+  </div>
+</div>
+
+{% if empty_paths %}
+<div class="panel-alert" role="status">
+  <p><strong>Putanje bez aktivne preporuke</strong> — izaberi zamenu ili ostavi prazno svesno:</p>
+  <ul>{% for path in empty_paths %}<li>{{ path.label }} <span class="hint">({{ path.code }})</span></li>{% endfor %}</ul>
+</div>
+{% endif %}
+
+<form class="panel-filters" method="get" action="{% url 'panel_shoes' market.code %}">
+  <label class="visually-hidden" for="q">Pretraga</label>
+  <input id="q" name="q" value="{{ query }}" placeholder="Naziv, kod ili SKU">
+  <label class="visually-hidden" for="status">Status</label>
+  <select id="status" name="status">
+    <option value="all" {% if status == "all" %}selected{% endif %}>Sve</option>
+    <option value="on" {% if status == "on" %}selected{% endif %}>Aktivne</option>
+    <option value="off" {% if status == "off" %}selected{% endif %}>Isključene</option>
+  </select>
+  <label class="visually-hidden" for="sort">Sortiranje</label>
+  <select id="sort" name="sort">
+    {% for key, item in sort_choices.items %}
+    <option value="{{ key }}" {% if sort == key %}selected{% endif %}>{{ item.1 }}</option>
+    {% endfor %}
+  </select>
+  <button class="reset panel-btn" type="submit">
+    {% include "panel/_ico.html" with name="search" %}
+    Primeni
+  </button>
+  {% if query or status != "all" or sort != "name" %}<a class="site-login" href="{% url 'panel_shoes' market.code %}">Poništi</a>{% endif %}
+</form>
+
+{% if rows %}
+<ul class="shoe-grid">
+  {% for row in rows %}
+  <li>
+    <a class="shoe-card{% if not row.shoe.available %} is-off{% endif %}" href="{% url 'panel_shoe' market.code row.shoe.pk %}">
+      <span class="shoe-card-photo">{% if row.image %}<img src="{{ row.image }}" alt="">{% endif %}</span>
+      <span class="shoe-card-body">
+        <span class="shoe-list-title">
+          <strong>{{ row.shoe.family_name }}</strong>
+          {% if not row.shoe.available %}<span class="panel-badge">Isključena</span>{% endif %}
+        </span>
+        <span class="shoe-card-model">{{ row.shoe.model_name }}</span>
+        <span class="shoe-list-meta">{{ row.variants }} varijanti{% if row.colors %} · {{ row.colors|join:", " }}{% endif %}</span>
+        {% if row.skus %}<span class="shoe-list-skus">{% for sku in row.skus %}<code>{{ sku }}</code>{% endfor %}{% if row.variants > 3 %}<span>+{{ row.variants|add:"-3" }}</span>{% endif %}</span>{% endif %}
+      </span>
+      <span class="shoe-card-go panel-btn-text">
+        {% include "panel/_ico.html" with name="edit" %}
+        Uredi
+      </span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+
+{% if page_obj.paginator.num_pages > 1 %}
+<nav class="panel-pagination" aria-label="Stranice">
+  {% if page_obj.has_previous %}
+  <a class="reset" href="?{% if query_string %}{{ query_string }}&{% endif %}page={{ page_obj.previous_page_number }}">Prethodna</a>
+  {% endif %}
+  <span class="panel-page-status">{{ page_obj.number }} / {{ page_obj.paginator.num_pages }} · {{ page_obj.paginator.count }} modela</span>
+  {% if page_obj.has_next %}
+  <a class="reset" href="?{% if query_string %}{{ query_string }}&{% endif %}page={{ page_obj.next_page_number }}">Sledeća</a>
+  {% endif %}
+</nav>
+{% else %}
+<p class="panel-count">{{ page_obj.paginator.count }} modela</p>
+{% endif %}
+
+{% else %}
+<p class="panel-lead">Nema patika za ovu pretragu ili filter.</p>
+{% endif %}
+{% endblock %}

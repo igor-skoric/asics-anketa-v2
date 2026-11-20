@@ -1,0 +1,47 @@
+{% extends "panel/base.html" %}
+{% block title %}Pregled uvoza · {{ market.country }}{% endblock %}
+{% block content %}
+<p class="eyebrow"><a class="site-login" href="{% url 'panel_shoes' market.code %}">{{ market.country }}</a></p>
+<h1>Pregled uvoza</h1>
+<p class="panel-lead">Tržište: <strong>{{ market.country }}</strong>. Potvrda upisuje sve izmene odjednom.</p>
+
+{% if stale %}
+<p class="panel-error">Katalog je izmenjen od učitavanja fajla. Vrati se i učitaj fajl ponovo.</p>
+{% endif %}
+
+{% if preview.errors %}
+<div class="panel-alert panel-alert-error" role="alert">
+  <p><strong>Greške — ništa nije upisano</strong></p>
+  <ul>
+    {% for error in preview.errors %}
+    <li>{{ error.sheet }} · red {{ error.row }} · {{ error.column }}: {{ error.message }}</li>
+    {% endfor %}
+  </ul>
+</div>
+<a class="reset" href="{% url 'panel_catalog_import' market.code %}">Učitaj ispravljen fajl</a>
+{% else %}
+<p class="panel-lead">{% if preview.change_count %}{{ preview.change_count }} izmena za upis.{% else %}0 promena — fajl se poklapa sa katalogom.{% endif %}</p>
+<ul class="import-changes">
+  {% for change in preview.changes %}
+  {% if change.kind != "same" %}
+  <li><strong>{{ change.kind }}</strong> · {{ change.sheet }} · {{ change.summary }}{% if change.detail %} <span class="hint">{{ change.detail }}</span>{% endif %}</li>
+  {% endif %}
+  {% endfor %}
+</ul>
+{% if not stale %}
+<form method="post">
+  {% csrf_token %}
+  <input type="hidden" name="confirm" value="1">
+  <div class="controls" style="justify-content:flex-start;margin-top:24px">
+    <button class="primary panel-btn" type="submit">
+      {% include "panel/_ico.html" with name="check" %}
+      Potvrdi uvoz
+    </button>
+    <a class="reset panel-btn" href="{% url 'panel_catalog_import' market.code %}">Otkaži</a>
+  </div>
+</form>
+{% else %}
+<a class="reset panel-btn" href="{% url 'panel_catalog_import' market.code %}">Novi pregled</a>
+{% endif %}
+{% endif %}
+{% endblock %}
