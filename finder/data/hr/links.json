@@ -3,8 +3,8 @@
   "notes": [
     "HR lista od klijenta (Linkovi za aplikaciju CRO.docx) — konkretni sportvision.hr product URL-ovi.",
     "Uvezeni samo modeli koji već postoje u HR katalogu; GEL-PULSE, TRABUCO 14/GTX i TRABUCO TERRA nisu dodati.",
-    "SUPERBLAST, METASPEED, BLAZEBLAST, FUJISPEED i METAFUJI TRAIL nisu u CRO listi — zadržani postojeći linkovi.",
-    "BLAZEBLAST je trail extra na svih 4 trail putanje."
+    "BLAZEBLAST je trail extra na svih 4 trail putanje.",
+    "SUPERBLAST, METASPEED, BLAZEBLAST, FUJISPEED i METAFUJI TRAIL nisu u CRO listi — CTA ide na sportvision.hr/proizvodi/asics umesto .rs product URL-ova."
   ],
   "shoes": [
     {
@@ -13,7 +13,9 @@
       "family_name": "GEL-NIMBUS™",
       "filename": "gel-nimbus.webp",
       "search_url": "https://www.sportvision.hr/proizvodi/asics",
-      "paths": ["road/comfort/soft"],
+      "paths": [
+        "road/comfort/soft"
+      ],
       "products": {
         "men": [
           "https://www.sportvision.hr/tenisice/1059527-asics-gel-nimbus-28",
@@ -39,7 +41,9 @@
       "family_name": "GEL-CUMULUS™",
       "filename": "gel-cumulus.webp",
       "search_url": "https://www.sportvision.hr/proizvodi/asics",
-      "paths": ["road/comfort/soft"],
+      "paths": [
+        "road/comfort/soft"
+      ],
       "products": {
         "men": [
           "https://www.sportvision.hr/tenisice/1077833-asics-gel-cumulus-28",
@@ -57,7 +61,10 @@
       "family_name": "DYNABLAST™",
       "filename": "dynablast.webp",
       "search_url": "https://www.sportvision.hr/proizvodi/asics",
-      "paths": ["road/comfort/soft", "road/speed/training"],
+      "paths": [
+        "road/comfort/soft",
+        "road/speed/training"
+      ],
       "products": {
         "men": [
           "https://www.sportvision.hr/tenisice/1058502-asics-dynablast-6",
@@ -74,7 +81,9 @@
       "family_name": "GEL-KAYANO™",
       "filename": "gel-kayano.webp",
       "search_url": "https://www.sportvision.hr/proizvodi/asics",
-      "paths": ["road/comfort/support"],
+      "paths": [
+        "road/comfort/support"
+      ],
       "products": {
         "men": [
           "https://www.sportvision.hr/tenisice/1077843-asics-gel-kayano-33",
@@ -93,7 +102,9 @@
       "family_name": "GT-2000™",
       "filename": "gt-2000.webp",
       "search_url": "https://www.sportvision.hr/proizvodi/asics",
-      "paths": ["road/comfort/support"],
+      "paths": [
+        "road/comfort/support"
+      ],
       "products": {
         "men": [
           "https://www.sportvision.hr/tenisice/1073872-asics-gt-2000-15-gtx",
@@ -110,13 +121,10 @@
       "family_name": "SUPERBLAST™",
       "filename": "superblast.webp",
       "search_url": "https://www.sportvision.hr/proizvodi/asics",
-      "paths": ["road/speed/training"],
-      "products": {
-        "unisex": [
-          "https://www.sportvision.rs/patike/70084732-asics-superblast-3",
-          "https://www.sportvision.rs/patike/70084855-asics-superblast-3"
-        ]
-      }
+      "paths": [
+        "road/speed/training"
+      ],
+      "products": {}
     },
     {
       "key": "novablast",
@@ -124,7 +132,9 @@
       "family_name": "NOVABLAST™",
       "filename": "novablast.webp",
       "search_url": "https://www.sportvision.hr/proizvodi/asics",
-      "paths": ["road/speed/training"],
+      "paths": [
+        "road/speed/training"
+      ],
       "products": {
         "men": [
           "https://www.sportvision.hr/tenisice/1052539-asics-novablast-6",
@@ -144,7 +154,10 @@
       "family_name": "NOOSA TRI™",
       "filename": "noosa-tri.webp",
       "search_url": "https://www.sportvision.hr/proizvodi/asics",
-      "paths": ["road/speed/training", "road/speed/race"],
+      "paths": [
+        "road/speed/training",
+        "road/speed/race"
+      ],
       "products": {
         "men": [
           "https://www.sportvision.hr/tenisice/1025244-asics-noosa-tri-16"
@@ -160,7 +173,9 @@
       "family_name": "VERSABLAST™",
       "filename": "versablast.webp",
       "search_url": "https://www.sportvision.hr/proizvodi/asics",
-      "paths": ["road/speed/training"],
+      "paths": [
+        "road/speed/training"
+      ],
       "products": {
         "men": [
           "https://www.sportvision.hr/tenisice/949839-asics-versablast-4"
@@ -176,12 +191,10 @@
       "family_name": "METASPEED™",
       "filename": "metaspeed.webp",
       "search_url": "https://www.sportvision.hr/proizvodi/asics",
-      "paths": ["road/speed/race"],
-      "products": {
-        "unisex": [
-          "https://www.sportvision.rs/patike/70088219-asics-metaspeed-sky-tokyo"
-        ]
-      }
+      "paths": [
+        "road/speed/race"
+      ],
+      "products": {}
     },
     {
       "key": "magic-speed",
@@ -189,7 +202,9 @@
       "family_name": "MAGIC SPEED™",
       "filename": "magic-speed.webp",
       "search_url": "https://www.sportvision.hr/proizvodi/asics",
-      "paths": ["road/speed/race"],
+      "paths": [
+        "road/speed/race"
+      ],
       "products": {
         "unisex": [
           "https://www.sportvision.hr/tenisice/1052519-asics-magic-speed-5",
@@ -203,7 +218,10 @@
       "family_name": "TRABUCO MAX™",
       "filename": "trabuco-max.webp",
       "search_url": "https://www.sportvision.hr/proizvodi/asics",
-      "paths": ["trail/protection/technical", "trail/protection/smooth"],
+      "paths": [
+        "trail/protection/technical",
+        "trail/protection/smooth"
+      ],
       "products": {
         "men": [
           "https://www.sportvision.hr/tenisice/1059437-asics-trabuco-max-5",
@@ -226,14 +244,7 @@
         "trail/light/technical",
         "trail/light/smooth"
       ],
-      "products": {
-        "men": [
-          "https://www.sportvision.rs/patike/70099342-asics-blazeblast"
-        ],
-        "women": [
-          "https://www.sportvision.rs/patike/70099276-asics-blazeblast"
-        ]
-      }
+      "products": {}
     },
     {
       "key": "fujispeed",
@@ -241,13 +252,11 @@
       "family_name": "FUJISPEED™",
       "filename": "fujispeed.webp",
       "search_url": "https://www.sportvision.hr/proizvodi/asics",
-      "paths": ["trail/light/technical", "trail/light/smooth"],
-      "products": {
-        "unisex": [
-          "https://www.sportvision.rs/patike/70069187-asics-fuji-spee-4",
-          "https://www.sportvision.rs/patike/70084865-asics-fujispeed-4"
-        ]
-      }
+      "paths": [
+        "trail/light/technical",
+        "trail/light/smooth"
+      ],
+      "products": {}
     },
     {
       "key": "metafuji-trail",
@@ -255,47 +264,81 @@
       "family_name": "METAFUJI TRAIL™",
       "filename": "metafuji-trail.webp",
       "search_url": "https://www.sportvision.hr/proizvodi/asics",
-      "paths": ["trail/light/technical", "trail/light/smooth"],
-      "products": {
-        "unisex": [
-          "https://www.sportvision.rs/patike/70067832-asics-metafuji-trail"
-        ]
-      }
+      "paths": [
+        "trail/light/technical",
+        "trail/light/smooth"
+      ],
+      "products": {}
     }
   ],
   "unavailable": {},
   "recommendations": {
     "road/comfort/soft": {
-      "shoes": ["gel-nimbus", "gel-cumulus", "dynablast"],
+      "shoes": [
+        "gel-nimbus",
+        "gel-cumulus",
+        "dynablast"
+      ],
       "extras": []
     },
     "road/comfort/support": {
-      "shoes": ["gel-kayano", "gt-2000"],
+      "shoes": [
+        "gel-kayano",
+        "gt-2000"
+      ],
       "extras": []
     },
     "road/speed/training": {
-      "shoes": ["superblast", "novablast", "noosa-tri", "dynablast", "versablast"],
+      "shoes": [
+        "superblast",
+        "novablast",
+        "noosa-tri",
+        "dynablast",
+        "versablast"
+      ],
       "extras": []
     },
     "road/speed/race": {
-      "shoes": ["metaspeed", "magic-speed", "noosa-tri"],
+      "shoes": [
+        "metaspeed",
+        "magic-speed",
+        "noosa-tri"
+      ],
       "extras": []
     },
     "trail/protection/technical": {
-      "shoes": ["trabuco-max"],
-      "extras": ["blazeblast"]
+      "shoes": [
+        "trabuco-max"
+      ],
+      "extras": [
+        "blazeblast"
+      ]
     },
     "trail/protection/smooth": {
-      "shoes": ["trabuco-max"],
-      "extras": ["blazeblast"]
+      "shoes": [
+        "trabuco-max"
+      ],
+      "extras": [
+        "blazeblast"
+      ]
     },
     "trail/light/technical": {
-      "shoes": ["fujispeed", "metafuji-trail"],
-      "extras": ["blazeblast"]
+      "shoes": [
+        "fujispeed",
+        "metafuji-trail"
+      ],
+      "extras": [
+        "blazeblast"
+      ]
     },
     "trail/light/smooth": {
-      "shoes": ["fujispeed", "metafuji-trail"],
-      "extras": ["blazeblast"]
+      "shoes": [
+        "fujispeed",
+        "metafuji-trail"
+      ],
+      "extras": [
+        "blazeblast"
+      ]
     }
   }
 }

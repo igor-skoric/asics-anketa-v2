@@ -64,7 +64,7 @@ Izvor istine: `finder/data/hr/links.json`.
 
 Klijentova CRO lista (`Linkovi za aplikaciju CRO.docx`) koristi **konkretne `sportvision.hr` product URL-ove** za modele koji već postoje u katalogu. Search/fallback ostaje `sportvision.hr/proizvodi/asics`.
 
-Uvezeni iz CRO liste: gel-nimbus (+ TR), gel-cumulus, gel-kayano, gt-2000 (14/15 TR/GTX), novablast, dynablast, versablast, magic-speed, noosa-tri, trabuco-max. Nisu dodati novi modeli iz liste (GEL-PULSE, TRABUCO 14/GTX, TRABUCO TERRA). SUPERBLAST, METASPEED, BLAZEBLAST, FUJISPEED i METAFUJI TRAIL nisu u CRO listi — zadržani postojeći linkovi.
+Uvezeni iz CRO liste: gel-nimbus (+ TR), gel-cumulus, gel-kayano, gt-2000 (14/15 TR/GTX), novablast, dynablast, versablast, magic-speed, noosa-tri, trabuco-max. Nisu dodati novi modeli iz liste (GEL-PULSE, TRABUCO 14/GTX, TRABUCO TERRA). SUPERBLAST, METASPEED, BLAZEBLAST, FUJISPEED i METAFUJI TRAIL nisu u CRO listi — CTA ide na `sportvision.hr/proizvodi/asics`.
 
 | # | Putanja | Modeli | Extra |
 |---|---|---|---|

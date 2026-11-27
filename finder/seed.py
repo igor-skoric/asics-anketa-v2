@@ -12,7 +12,6 @@ def seed_catalog(apps, schema_editor=None):
     Recommendation = apps.get_model("finder", "Recommendation")
     RecommendationItem = apps.get_model("finder", "RecommendationItem")
 
-    products = json.loads((DATA_DIR / "rs" / "products.json").read_text(encoding="utf-8"))
     paths = {}
     for code, label, position in ANSWER_PATHS:
         path, _created = AnswerPath.objects.get_or_create(
@@ -21,6 +20,7 @@ def seed_catalog(apps, schema_editor=None):
         )
         paths[code] = path
 
+    rs_products = json.loads((DATA_DIR / "rs" / "products.json").read_text(encoding="utf-8"))
     for market_code in ("rs", "hr", "si"):
         meta = json.loads((DATA_DIR / market_code / "market.json").read_text(encoding="utf-8"))
         market, _created = Market.objects.get_or_create(
@@ -32,6 +32,12 @@ def seed_catalog(apps, schema_editor=None):
                 "ga_ids": meta["ga_ids"],
                 "store_domain": meta.get("store_domain", ""),
             },
+        )
+        products_path = DATA_DIR / market_code / "products.json"
+        products = (
+            json.loads(products_path.read_text(encoding="utf-8"))
+            if products_path.is_file()
+            else rs_products
         )
         shoes = {}
         for item in products:
