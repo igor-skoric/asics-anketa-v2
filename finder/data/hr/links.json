@@ -1,8 +1,9 @@
 {
-  "updated": "2026-11-06",
+  "updated": "2026-11-25",
   "notes": [
-    "HR lista od klijenta koristi konkretne sportvision.rs product URL-ove (isti ID-jevi kao RS katalog).",
-    "SUPERBLAST ostaje u training putanji; MEGABLAST nije u HR listi.",
+    "HR lista od klijenta (Linkovi za aplikaciju CRO.docx) — konkretni sportvision.hr product URL-ovi.",
+    "Uvezeni samo modeli koji već postoje u HR katalogu; GEL-PULSE, TRABUCO 14/GTX i TRABUCO TERRA nisu dodati.",
+    "SUPERBLAST, METASPEED, BLAZEBLAST, FUJISPEED i METAFUJI TRAIL nisu u CRO listi — zadržani postojeći linkovi.",
     "BLAZEBLAST je trail extra na svih 4 trail putanje."
   ],
   "shoes": [
@@ -15,14 +16,20 @@
       "paths": ["road/comfort/soft"],
       "products": {
         "men": [
-          "https://www.sportvision.rs/patike/70067852-asics-gel-nimbus-28",
-          "https://www.sportvision.rs/patike/70067922-asics-gel-nimbus-28",
-          "https://www.sportvision.rs/patike/70069535-asics-gel-nimbus-28",
-          "https://www.sportvision.rs/patike/70084767-asics-gel-nimbus-28"
+          "https://www.sportvision.hr/tenisice/1059527-asics-gel-nimbus-28",
+          "https://www.sportvision.hr/tenisice/1024765-asics-gel-nimbus-28",
+          "https://www.sportvision.hr/tenisice/1077848-asics-gel-nimbus-28",
+          "https://www.sportvision.hr/tenisice/1075436-asics-gel-nimbus-28",
+          "https://www.sportvision.hr/tenisice/1025264-asics-gel-nimbus-28",
+          "https://www.sportvision.hr/tenisice/1024760-asics-gel-nimbus-28",
+          "https://www.sportvision.hr/tenisice/1059968-asics-gel-nimbus-28-tr",
+          "https://www.sportvision.hr/tenisice/1025133-asics-gel-nimbus-28-tr"
         ],
         "women": [
-          "https://www.sportvision.rs/patike/70067837-asics-gel-nimbus-28",
-          "https://www.sportvision.rs/patike/70067887-asics-gel-nimbus-28"
+          "https://www.sportvision.hr/tenisice/1060178-asics-gel-nimbus-28-tr",
+          "https://www.sportvision.hr/tenisice/1043036-asics-gel-nimbus-28-tr",
+          "https://www.sportvision.hr/tenisice/1024800-asics-gel-nimbus-28",
+          "https://www.sportvision.hr/tenisice/1024795-asics-gel-nimbus-28"
         ]
       }
     },
@@ -35,12 +42,12 @@
       "paths": ["road/comfort/soft"],
       "products": {
         "men": [
-          "https://www.sportvision.rs/patike/70073632-asics-gel-cumulus-28",
-          "https://www.sportvision.rs/patike/70090442-asics-gel-cumulus-28"
+          "https://www.sportvision.hr/tenisice/1077833-asics-gel-cumulus-28",
+          "https://www.sportvision.hr/tenisice/1059537-asics-gel-cumulus-28",
+          "https://www.sportvision.hr/tenisice/1025269-asics-gel-cumulus-28"
         ],
         "women": [
-          "https://www.sportvision.rs/patike/70073600-asics-gel-cumulus-28",
-          "https://www.sportvision.rs/patike/70084860-asics-gel-cumulus-28"
+          "https://www.sportvision.hr/tenisice/1025294-asics-gel-cumulus-28"
         ]
       }
     },
@@ -53,11 +60,11 @@
       "paths": ["road/comfort/soft", "road/speed/training"],
       "products": {
         "men": [
-          "https://www.sportvision.rs/patike/70090927-asics-dynablast-6",
-          "https://www.sportvision.rs/patike/70095895-asics-dynablast-6"
+          "https://www.sportvision.hr/tenisice/1058502-asics-dynablast-6",
+          "https://www.sportvision.hr/tenisice/1052524-asics-dynablast-6"
         ],
         "women": [
-          "https://www.sportvision.rs/patike/70095945-asics-dynablast-6"
+          "https://www.sportvision.hr/tenisice/1058612-asics-dynablast-6"
         ]
       }
     },
@@ -70,30 +77,30 @@
       "paths": ["road/comfort/support"],
       "products": {
         "men": [
-          "https://www.sportvision.rs/patike/70084722-asics-gel-kayano-33",
-          "https://www.sportvision.rs/patike/70084845-asics-gel-kayano-33",
-          "https://www.sportvision.rs/patike/70084876-asics-gel-kayano-33",
-          "https://www.sportvision.rs/patike/70090427-asics-gel-kayano-33"
+          "https://www.sportvision.hr/tenisice/1077843-asics-gel-kayano-33",
+          "https://www.sportvision.hr/tenisice/1051998-asics-gel-kayano-33",
+          "https://www.sportvision.hr/tenisice/1051420-asics-gel-kayano-33"
         ],
         "women": [
-          "https://www.sportvision.rs/patike/70084727-asics-gel-kayano-33",
-          "https://www.sportvision.rs/patike/70084835-asics-gel-kayano-33"
+          "https://www.sportvision.hr/tenisice/1077858-asics-gel-kayano-33",
+          "https://www.sportvision.hr/tenisice/1051425-asics-gel-kayano-33"
         ]
       }
     },
     {
       "key": "gt-2000",
-      "model_name": "GT-2000 14",
+      "model_name": "GT-2000",
       "family_name": "GT-2000™",
       "filename": "gt-2000.webp",
       "search_url": "https://www.sportvision.hr/proizvodi/asics",
       "paths": ["road/comfort/support"],
       "products": {
         "men": [
-          "https://www.sportvision.rs/patike/70067857-asics-gt-2000-14"
+          "https://www.sportvision.hr/tenisice/1073872-asics-gt-2000-15-gtx",
+          "https://www.sportvision.hr/tenisice/1060158-asics-gt-2000-15-tr"
         ],
         "women": [
-          "https://www.sportvision.rs/patike/70071645-asics-gt-2000-14"
+          "https://www.sportvision.hr/tenisice/1032523-asics-gt-2000-14"
         ]
       }
     },
@@ -120,12 +127,14 @@
       "paths": ["road/speed/training"],
       "products": {
         "men": [
-          "https://www.sportvision.rs/patike/70088224-asics-novablast-6",
-          "https://www.sportvision.rs/patike/70090897-asics-novablast-6"
+          "https://www.sportvision.hr/tenisice/1052539-asics-novablast-6",
+          "https://www.sportvision.hr/tenisice/1052449-asics-novablast-6",
+          "https://www.sportvision.hr/tenisice/1075369-asics-novablast-6"
         ],
         "women": [
-          "https://www.sportvision.rs/patike/70088214-asics-novablast-6",
-          "https://www.sportvision.rs/patike/70095915-asics-novablast-6"
+          "https://www.sportvision.hr/tenisice/1079403-asics-novablast-6",
+          "https://www.sportvision.hr/tenisice/1052414-asics-novablast-6",
+          "https://www.sportvision.hr/tenisice/1058562-asics-novablast-6"
         ]
       }
     },
@@ -138,12 +147,10 @@
       "paths": ["road/speed/training", "road/speed/race"],
       "products": {
         "men": [
-          "https://www.sportvision.rs/patike/70071650-asics-noosa-tri-16",
-          "https://www.sportvision.rs/patike/70090437-asics-noosa-tri-16"
+          "https://www.sportvision.hr/tenisice/1025244-asics-noosa-tri-16"
         ],
         "women": [
-          "https://www.sportvision.rs/patike/70069490-asics-noosa-tri-16",
-          "https://www.sportvision.rs/patike/70089638-asics-noosa-tri-16"
+          "https://www.sportvision.hr/tenisice/1026465-asics-noosa-tri-16"
         ]
       }
     },
@@ -156,13 +163,10 @@
       "paths": ["road/speed/training"],
       "products": {
         "men": [
-          "https://www.sportvision.rs/patike/70026934-asics-versablast-4",
-          "https://www.sportvision.rs/patike/70067822-asics-versablast-4",
-          "https://www.sportvision.rs/patike/70090717-asics-versablast-4"
+          "https://www.sportvision.hr/tenisice/949839-asics-versablast-4"
         ],
         "women": [
-          "https://www.sportvision.rs/patike/70067902-asics-versablast-4",
-          "https://www.sportvision.rs/patike/70090277-asics-versablast-4"
+          "https://www.sportvision.hr/tenisice/1049938-asics-versablast-4"
         ]
       }
     },
@@ -188,8 +192,8 @@
       "paths": ["road/speed/race"],
       "products": {
         "unisex": [
-          "https://www.sportvision.rs/patike/70069445-asics-magic-speed-5",
-          "https://www.sportvision.rs/patike/70084742-asics-magic-speed-5"
+          "https://www.sportvision.hr/tenisice/1052519-asics-magic-speed-5",
+          "https://www.sportvision.hr/tenisice/1024820-asics-magic-speed-5"
         ]
       }
     },
@@ -202,12 +206,11 @@
       "paths": ["trail/protection/technical", "trail/protection/smooth"],
       "products": {
         "men": [
-          "https://www.sportvision.rs/patike/70071695-asics-trabuco-max-5",
-          "https://www.sportvision.rs/patike/70084712-asics-trabuco-max-5"
+          "https://www.sportvision.hr/tenisice/1059437-asics-trabuco-max-5",
+          "https://www.sportvision.hr/tenisice/1032508-asics-trabuco-max-5"
         ],
         "women": [
-          "https://www.sportvision.rs/patike/70071905-asics-trabuco-max-5",
-          "https://www.sportvision.rs/patike/70084800-asics-trabuco-max-5"
+          "https://www.sportvision.hr/tenisice/1033381-asics-trabuco-max-5"
         ]
       }
     },

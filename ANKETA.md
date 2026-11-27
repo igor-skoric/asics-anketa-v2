@@ -58,11 +58,13 @@ Nedostupno na SI: `superblast`, `blazeblast`.
 
 Sledeća sezona (napomena klijenta): trail proširiti sa **TRABUCO**, **TRABUCO TERRA**, eventualno **SONOMA**.
 
-### Hrvatska (HR) — važi od 06.11.2026.
+### Hrvatska (HR) — važi od 25.11.2026.
 
 Izvor istine: `finder/data/hr/links.json`.
 
-Klijent je poslao **konkretne `sportvision.rs` product URL-ove** (isti ID-jevi kao RS katalog). Search/fallback ostaje `sportvision.hr/proizvodi/asics`.
+Klijentova CRO lista (`Linkovi za aplikaciju CRO.docx`) koristi **konkretne `sportvision.hr` product URL-ove** za modele koji već postoje u katalogu. Search/fallback ostaje `sportvision.hr/proizvodi/asics`.
+
+Uvezeni iz CRO liste: gel-nimbus (+ TR), gel-cumulus, gel-kayano, gt-2000 (14/15 TR/GTX), novablast, dynablast, versablast, magic-speed, noosa-tri, trabuco-max. Nisu dodati novi modeli iz liste (GEL-PULSE, TRABUCO 14/GTX, TRABUCO TERRA). SUPERBLAST, METASPEED, BLAZEBLAST, FUJISPEED i METAFUJI TRAIL nisu u CRO listi — zadržani postojeći linkovi.
 
 | # | Putanja | Modeli | Extra |
 |---|---|---|---|

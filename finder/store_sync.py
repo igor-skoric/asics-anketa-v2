@@ -27,6 +27,7 @@ COLOR_MAP = {
     "zelena": "Zelena",
     "green": "Zelena",
     "bela": "Bela",
+    "bijela": "Bela",
     "white": "Bela",
     "bež": "Bež",
     "bez": "Bež",
@@ -70,10 +71,14 @@ GENDER_MAP = {
     "muski": "men",
     "muško": "men",
     "musko": "men",
+    "muškarci": "men",
+    "muskarci": "men",
     "žensko": "women",
     "zensko": "women",
     "ženski": "women",
     "zenski": "women",
+    "žene": "women",
+    "zene": "women",
     "unisex": "unisex",
 }
 

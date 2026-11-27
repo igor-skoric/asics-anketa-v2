@@ -2,295 +2,355 @@
   {
     "key": "gel-nimbus",
     "model_name": "GEL-NIMBUS 28",
-    "sku": "1011C127-001",
+    "sku": "1011C127-004",
     "filename": "gel-nimbus.webp",
     "source_url": "https://www.sportvision.hr/proizvodi/asics",
-    "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C127-001/images/1011C127-001.jpg.webp",
+    "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C127-004/images/1011C127-004.jpg.webp",
     "bytes": 0,
     "store_url": "https://www.sportvision.hr/proizvodi/asics",
-    "store_sku": "1011C127-001",
+    "store_sku": "1011C127-004",
     "available": true,
-    "checked_at": "2026-11-06",
-    "available_size_count": 23,
-    "store_product_url": "https://www.sportvision.rs/patike/70067852-asics-gel-nimbus-28",
+    "checked_at": "2026-11-25",
+    "available_size_count": 128,
+    "store_product_url": "https://www.sportvision.hr/tenisice/1059527-asics-gel-nimbus-28",
     "variants": [
       {
-        "id": "70067852",
-        "sku": "1011C127-001",
-        "gender": "men",
-        "color": "Crna",
-        "filename": "variants/1011C127-001.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C127-001/images/1011C127-001.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70067852-asics-gel-nimbus-28",
-        "available_size_count": 0
-      },
-      {
-        "id": "70067922",
-        "sku": "1011C127-003",
-        "gender": "men",
-        "color": "Crna",
-        "filename": "variants/1011C127-003.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C127-003/images/1011C127-003.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70067922-asics-gel-nimbus-28",
-        "available_size_count": 2
-      },
-      {
-        "id": "70069535",
-        "sku": "1011C127-400",
-        "gender": "men",
-        "color": "Zelena",
-        "filename": "variants/1011C127-400.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C127-400/images/1011C127-400.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70069535-asics-gel-nimbus-28",
-        "available_size_count": 2
-      },
-      {
-        "id": "70084767",
+        "id": "1059527",
         "sku": "1011C127-004",
         "gender": "men",
         "color": "Crna",
         "filename": "variants/1011C127-004.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C127-004/images/1011C127-004.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70084767-asics-gel-nimbus-28",
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C127-004/images/1011C127-004.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1059527-asics-gel-nimbus-28",
+        "available_size_count": 11
+      },
+      {
+        "id": "1024765",
+        "sku": "1011C127-003",
+        "gender": "men",
+        "color": "Crna",
+        "filename": "variants/1011C127-003.webp",
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C127-003/images/1011C127-003.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1024765-asics-gel-nimbus-28",
         "available_size_count": 10
       },
       {
-        "id": "70067837",
-        "sku": "1012B899-500",
-        "gender": "women",
-        "color": "Ljubičasta",
-        "filename": "variants/1012B899-500.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B899-500/images/1012B899-500.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70067837-asics-gel-nimbus-28",
-        "available_size_count": 2
+        "id": "1077848",
+        "sku": "1012B899-002",
+        "gender": "men",
+        "color": "Crna",
+        "filename": "variants/1012B899-002.webp",
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1012B899-002/images/1012B899-002.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1077848-asics-gel-nimbus-28",
+        "available_size_count": 12
       },
       {
-        "id": "70067887",
+        "id": "1075436",
+        "sku": "1011C127-405",
+        "gender": "men",
+        "color": "Plava",
+        "filename": "variants/1011C127-405.webp",
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C127-405/images/1011C127-405.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1075436-asics-gel-nimbus-28",
+        "available_size_count": 16
+      },
+      {
+        "id": "1025264",
+        "sku": "1011C127-400",
+        "gender": "men",
+        "color": "Zelena",
+        "filename": "variants/1011C127-400.webp",
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C127-400/images/1011C127-400.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1025264-asics-gel-nimbus-28",
+        "available_size_count": 9
+      },
+      {
+        "id": "1024760",
+        "sku": "1011C127-001",
+        "gender": "men",
+        "color": "Crna",
+        "filename": "variants/1011C127-001.webp",
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C127-001/images/1011C127-001.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1024760-asics-gel-nimbus-28",
+        "available_size_count": 10
+      },
+      {
+        "id": "1059968",
+        "sku": "1011C309-250",
+        "gender": "men",
+        "color": "Bež",
+        "filename": "variants/1011C309-250.webp",
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C309-250/images/1011C309-250.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1059968-asics-gel-nimbus-28-tr",
+        "available_size_count": 12
+      },
+      {
+        "id": "1025133",
+        "sku": "1011C216-300",
+        "gender": "men",
+        "color": "Zelena",
+        "filename": "variants/1011C216-300.webp",
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C216-300/images/1011C216-300.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1025133-asics-gel-nimbus-28-tr",
+        "available_size_count": 11
+      },
+      {
+        "id": "1060178",
+        "sku": "1012C069-250",
+        "gender": "women",
+        "color": "Bež",
+        "filename": "variants/1012C069-250.webp",
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1012C069-250/images/1012C069-250.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1060178-asics-gel-nimbus-28-tr",
+        "available_size_count": 10
+      },
+      {
+        "id": "1043036",
+        "sku": "1012B981-020",
+        "gender": "women",
+        "color": "Bež",
+        "filename": "variants/1012B981-020.webp",
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1012B981-020/images/1012B981-020.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1043036-asics-gel-nimbus-28-tr",
+        "available_size_count": 6
+      },
+      {
+        "id": "1024800",
         "sku": "1012B899-700",
         "gender": "women",
         "color": "Roze",
         "filename": "variants/1012B899-700.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B899-700/images/1012B899-700.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70067887-asics-gel-nimbus-28",
-        "available_size_count": 7
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1012B899-700/images/1012B899-700.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1024800-asics-gel-nimbus-28",
+        "available_size_count": 11
+      },
+      {
+        "id": "1024795",
+        "sku": "1012B899-500",
+        "gender": "women",
+        "color": "Ljubičasta",
+        "filename": "variants/1012B899-500.webp",
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1012B899-500/images/1012B899-500.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1024795-asics-gel-nimbus-28",
+        "available_size_count": 10
       }
     ]
   },
   {
     "key": "gel-cumulus",
     "model_name": "GEL-CUMULUS 28",
-    "sku": "1011C143-001",
+    "sku": "1011C143-250",
     "filename": "gel-cumulus.webp",
     "source_url": "https://www.sportvision.hr/proizvodi/asics",
-    "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C143-001/images/1011C143-001.jpg.webp",
+    "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C143-250/images/1011C143-250.jpg.webp",
     "bytes": 0,
     "store_url": "https://www.sportvision.hr/proizvodi/asics",
-    "store_sku": "1011C143-001",
+    "store_sku": "1011C143-250",
     "available": true,
-    "checked_at": "2026-11-06",
-    "available_size_count": 20,
-    "store_product_url": "https://www.sportvision.rs/patike/70073632-asics-gel-cumulus-28",
+    "checked_at": "2026-11-25",
+    "available_size_count": 48,
+    "store_product_url": "https://www.sportvision.hr/tenisice/1077833-asics-gel-cumulus-28",
     "variants": [
       {
-        "id": "70073632",
-        "sku": "1011C143-001",
+        "id": "1077833",
+        "sku": "1011C143-250",
         "gender": "men",
-        "color": "Crna",
-        "filename": "variants/1011C143-001.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C143-001/images/1011C143-001.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70073632-asics-gel-cumulus-28",
-        "available_size_count": 2
+        "color": "Plava",
+        "filename": "variants/1011C143-250.webp",
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C143-250/images/1011C143-250.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1077833-asics-gel-cumulus-28",
+        "available_size_count": 16
       },
       {
-        "id": "70090442",
+        "id": "1059537",
         "sku": "1011C143-002",
         "gender": "men",
         "color": "Crna",
         "filename": "variants/1011C143-002.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C143-002/images/1011C143-002.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70090442-asics-gel-cumulus-28",
-        "available_size_count": 6
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C143-002/images/1011C143-002.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1059537-asics-gel-cumulus-28",
+        "available_size_count": 8
       },
       {
-        "id": "70073600",
+        "id": "1025269",
+        "sku": "1011C143-001",
+        "gender": "men",
+        "color": "Crna",
+        "filename": "variants/1011C143-001.webp",
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C143-001/images/1011C143-001.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1025269-asics-gel-cumulus-28",
+        "available_size_count": 14
+      },
+      {
+        "id": "1025294",
         "sku": "1012B916-500",
         "gender": "women",
         "color": "Ljubičasta",
         "filename": "variants/1012B916-500.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B916-500/images/1012B916-500.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70073600-asics-gel-cumulus-28",
-        "available_size_count": 6
-      },
-      {
-        "id": "70084860",
-        "sku": "1012B916-501",
-        "gender": "women",
-        "color": "Roze",
-        "filename": "variants/1012B916-501.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B916-501/images/1012B916-501.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70084860-asics-gel-cumulus-28",
-        "available_size_count": 6
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1012B916-500/images/1012B916-500.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1025294-asics-gel-cumulus-28",
+        "available_size_count": 10
       }
     ]
   },
   {
     "key": "dynablast",
     "model_name": "DYNABLAST 6",
-    "sku": "1011C245-400",
+    "sku": "1011C245-001",
     "filename": "dynablast.webp",
     "source_url": "https://www.sportvision.hr/proizvodi/asics",
-    "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C245-400/images/1011C245-400.jpg.webp",
+    "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C245-001/images/1011C245-001.jpg.webp",
     "bytes": 0,
     "store_url": "https://www.sportvision.hr/proizvodi/asics",
-    "store_sku": "1011C245-400",
+    "store_sku": "1011C245-001",
     "available": true,
-    "checked_at": "2026-11-06",
-    "available_size_count": 25,
-    "store_product_url": "https://www.sportvision.rs/patike/70090927-asics-dynablast-6",
+    "checked_at": "2026-11-25",
+    "available_size_count": 36,
+    "store_product_url": "https://www.sportvision.hr/tenisice/1058502-asics-dynablast-6",
     "variants": [
       {
-        "id": "70090927",
-        "sku": "1011C245-400",
-        "gender": "men",
-        "color": "Plava",
-        "filename": "variants/1011C245-400.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C245-400/images/1011C245-400.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70090927-asics-dynablast-6",
-        "available_size_count": 9
-      },
-      {
-        "id": "70095895",
+        "id": "1058502",
         "sku": "1011C245-001",
         "gender": "men",
         "color": "Crna",
         "filename": "variants/1011C245-001.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C245-001/images/1011C245-001.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70095895-asics-dynablast-6",
-        "available_size_count": 9
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C245-001/images/1011C245-001.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1058502-asics-dynablast-6",
+        "available_size_count": 13
       },
       {
-        "id": "70095945",
+        "id": "1052524",
+        "sku": "1011C245-400",
+        "gender": "men",
+        "color": "Plava",
+        "filename": "variants/1011C245-400.webp",
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C245-400/images/1011C245-400.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1052524-asics-dynablast-6",
+        "available_size_count": 13
+      },
+      {
+        "id": "1058612",
         "sku": "1012C010-250",
         "gender": "women",
         "color": "Bela",
         "filename": "variants/1012C010-250.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012C010-250/images/1012C010-250.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70095945-asics-dynablast-6",
-        "available_size_count": 7
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1012C010-250/images/1012C010-250.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1058612-asics-dynablast-6",
+        "available_size_count": 10
       }
     ]
   },
   {
     "key": "gel-kayano",
     "model_name": "GEL-KAYANO 33",
-    "sku": "1011C167-100",
+    "sku": "1011C167-402",
     "filename": "gel-kayano.webp",
     "source_url": "https://www.sportvision.hr/proizvodi/asics",
-    "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C167-100/images/1011C167-100.jpg.webp",
+    "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C167-402/images/1011C167-402.jpg.webp",
     "bytes": 0,
     "store_url": "https://www.sportvision.hr/proizvodi/asics",
-    "store_sku": "1011C167-100",
+    "store_sku": "1011C167-402",
     "available": true,
-    "checked_at": "2026-11-06",
-    "available_size_count": 38,
-    "store_product_url": "https://www.sportvision.rs/patike/70084722-asics-gel-kayano-33",
+    "checked_at": "2026-11-25",
+    "available_size_count": 63,
+    "store_product_url": "https://www.sportvision.hr/tenisice/1077843-asics-gel-kayano-33",
     "variants": [
       {
-        "id": "70084722",
-        "sku": "1011C167-100",
+        "id": "1077843",
+        "sku": "1011C167-402",
         "gender": "men",
-        "color": "Bela",
-        "filename": "variants/1011C167-100.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C167-100/images/1011C167-100.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70084722-asics-gel-kayano-33",
-        "available_size_count": 10
+        "color": "Crna",
+        "filename": "variants/1011C167-402.webp",
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C167-402/images/1011C167-402.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1077843-asics-gel-kayano-33",
+        "available_size_count": 15
       },
       {
-        "id": "70084845",
-        "sku": "1011C167-403",
-        "gender": "men",
-        "color": "Zelena",
-        "filename": "variants/1011C167-403.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C167-403/images/1011C167-403.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70084845-asics-gel-kayano-33",
-        "available_size_count": 1
-      },
-      {
-        "id": "70084876",
+        "id": "1051998",
         "sku": "1011C167-200",
         "gender": "men",
         "color": "Zelena",
         "filename": "variants/1011C167-200.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C167-200/images/1011C167-200.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70084876-asics-gel-kayano-33",
-        "available_size_count": 8
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C167-200/images/1011C167-200.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1051998-asics-gel-kayano-33",
+        "available_size_count": 13
       },
       {
-        "id": "70090427",
-        "sku": "1011C167-002",
+        "id": "1051420",
+        "sku": "1011C167-100",
         "gender": "men",
-        "color": "Crna",
-        "filename": "variants/1011C167-002.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C167-002/images/1011C167-002.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70090427-asics-gel-kayano-33",
-        "available_size_count": 4
+        "color": "Bela",
+        "filename": "variants/1011C167-100.webp",
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C167-100/images/1011C167-100.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1051420-asics-gel-kayano-33",
+        "available_size_count": 14
       },
       {
-        "id": "70084727",
+        "id": "1077858",
+        "sku": "1012B939-400",
+        "gender": "women",
+        "color": "Plava",
+        "filename": "variants/1012B939-400.webp",
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1012B939-400/images/1012B939-400.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1077858-asics-gel-kayano-33",
+        "available_size_count": 11
+      },
+      {
+        "id": "1051425",
         "sku": "1012B939-100",
         "gender": "women",
         "color": "Bela",
         "filename": "variants/1012B939-100.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B939-100/images/1012B939-100.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70084727-asics-gel-kayano-33",
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1012B939-100/images/1012B939-100.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1051425-asics-gel-kayano-33",
         "available_size_count": 10
-      },
-      {
-        "id": "70084835",
-        "sku": "1012B939-501",
-        "gender": "women",
-        "color": "Roze",
-        "filename": "variants/1012B939-501.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B939-501/images/1012B939-501.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70084835-asics-gel-kayano-33",
-        "available_size_count": 5
       }
     ]
   },
   {
     "key": "gt-2000",
-    "model_name": "GT-2000 14",
-    "sku": "1011C056-004",
+    "model_name": "GT-2000",
+    "sku": "1011C237-020",
     "filename": "gt-2000.webp",
     "source_url": "https://www.sportvision.hr/proizvodi/asics",
-    "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C056-004/images/1011C056-004.jpg.webp",
+    "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C237-020/images/1011C237-020.jpg.webp",
     "bytes": 0,
     "store_url": "https://www.sportvision.hr/proizvodi/asics",
-    "store_sku": "1011C056-004",
+    "store_sku": "1011C237-020",
     "available": true,
-    "checked_at": "2026-11-06",
-    "available_size_count": 4,
-    "store_product_url": "https://www.sportvision.rs/patike/70067857-asics-gt-2000-14",
+    "checked_at": "2026-11-25",
+    "available_size_count": 32,
+    "store_product_url": "https://www.sportvision.hr/tenisice/1073872-asics-gt-2000-15-gtx",
     "variants": [
       {
-        "id": "70067857",
-        "sku": "1011C056-004",
+        "id": "1073872",
+        "sku": "1011C237-020",
         "gender": "men",
         "color": "Crna",
-        "filename": "variants/1011C056-004.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C056-004/images/1011C056-004.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70067857-asics-gt-2000-14",
-        "available_size_count": 0
+        "filename": "variants/1011C237-020.webp",
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C237-020/images/1011C237-020.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1073872-asics-gt-2000-15-gtx",
+        "available_size_count": 11
       },
       {
-        "id": "70071645",
+        "id": "1060158",
+        "sku": "1011C308-250",
+        "gender": "men",
+        "color": "Bež",
+        "filename": "variants/1011C308-250.webp",
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C308-250/images/1011C308-250.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1060158-asics-gt-2000-15-tr",
+        "available_size_count": 13
+      },
+      {
+        "id": "1032523",
         "sku": "1012B843-700",
         "gender": "women",
         "color": "Roze",
         "filename": "variants/1012B843-700.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B843-700/images/1012B843-700.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70071645-asics-gt-2000-14",
-        "available_size_count": 4
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1012B843-700/images/1012B843-700.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1032523-asics-gt-2000-14",
+        "available_size_count": 8
       }
     ]
   },
@@ -305,8 +365,8 @@
     "store_url": "https://www.sportvision.hr/proizvodi/asics",
     "store_sku": "1013A177-001",
     "available": true,
-    "checked_at": "2026-11-06",
-    "available_size_count": 4,
+    "checked_at": "2026-11-25",
+    "available_size_count": 0,
     "store_product_url": "https://www.sportvision.rs/patike/70084732-asics-superblast-3",
     "variants": [
       {
@@ -317,7 +377,7 @@
         "filename": "variants/1013A177-001.webp",
         "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1013A177-001/images/1013A177-001.jpg.webp",
         "store_url": "https://www.sportvision.rs/patike/70084732-asics-superblast-3",
-        "available_size_count": 2
+        "available_size_count": 0
       },
       {
         "id": "70084855",
@@ -327,7 +387,7 @@
         "filename": "variants/1013A177-750.webp",
         "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1013A177-750/images/1013A177-750.jpg.webp",
         "store_url": "https://www.sportvision.rs/patike/70084855-asics-superblast-3",
-        "available_size_count": 2
+        "available_size_count": 0
       }
     ]
   },
@@ -337,54 +397,74 @@
     "sku": "1011C243-700",
     "filename": "novablast.webp",
     "source_url": "https://www.sportvision.hr/proizvodi/asics",
-    "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C243-700/images/1011C243-700.jpg.webp",
+    "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C243-700/images/1011C243-700.jpg.webp",
     "bytes": 0,
     "store_url": "https://www.sportvision.hr/proizvodi/asics",
     "store_sku": "1011C243-700",
     "available": true,
-    "checked_at": "2026-11-06",
-    "available_size_count": 34,
-    "store_product_url": "https://www.sportvision.rs/patike/70088224-asics-novablast-6",
+    "checked_at": "2026-11-25",
+    "available_size_count": 69,
+    "store_product_url": "https://www.sportvision.hr/tenisice/1052539-asics-novablast-6",
     "variants": [
       {
-        "id": "70088224",
+        "id": "1052539",
         "sku": "1011C243-700",
         "gender": "men",
         "color": "Bež",
         "filename": "variants/1011C243-700.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C243-700/images/1011C243-700.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70088224-asics-novablast-6",
-        "available_size_count": 11
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C243-700/images/1011C243-700.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1052539-asics-novablast-6",
+        "available_size_count": 13
       },
       {
-        "id": "70090897",
+        "id": "1052449",
         "sku": "1011C243-001",
         "gender": "men",
         "color": "Crna",
         "filename": "variants/1011C243-001.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C243-001/images/1011C243-001.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70090897-asics-novablast-6",
-        "available_size_count": 9
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C243-001/images/1011C243-001.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1052449-asics-novablast-6",
+        "available_size_count": 13
       },
       {
-        "id": "70088214",
+        "id": "1075369",
+        "sku": "1011C243-102",
+        "gender": "men",
+        "color": "Bela",
+        "filename": "variants/1011C243-102.webp",
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C243-102/images/1011C243-102.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1075369-asics-novablast-6",
+        "available_size_count": 11
+      },
+      {
+        "id": "1079403",
+        "sku": "1012C021-500",
+        "gender": "women",
+        "color": "Ljubičasta",
+        "filename": "variants/1012C021-500.webp",
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1012C021-500/images/1012C021-500.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1079403-asics-novablast-6",
+        "available_size_count": 10
+      },
+      {
+        "id": "1052414",
         "sku": "1012C008-700",
         "gender": "women",
         "color": "Bež",
         "filename": "variants/1012C008-700.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012C008-700/images/1012C008-700.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70088214-asics-novablast-6",
-        "available_size_count": 7
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1012C008-700/images/1012C008-700.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1052414-asics-novablast-6",
+        "available_size_count": 10
       },
       {
-        "id": "70095915",
+        "id": "1058562",
         "sku": "1012C008-500",
         "gender": "women",
         "color": "Roze",
         "filename": "variants/1012C008-500.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012C008-500/images/1012C008-500.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70095915-asics-novablast-6",
-        "available_size_count": 7
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1012C008-500/images/1012C008-500.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1058562-asics-novablast-6",
+        "available_size_count": 12
       }
     ]
   },
@@ -394,54 +474,34 @@
     "sku": "1011B872-301",
     "filename": "noosa-tri.webp",
     "source_url": "https://www.sportvision.hr/proizvodi/asics",
-    "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011B872-301/images/1011B872-301.jpg.webp",
+    "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011B872-301/images/1011B872-301.jpg.webp",
     "bytes": 0,
     "store_url": "https://www.sportvision.hr/proizvodi/asics",
     "store_sku": "1011B872-301",
     "available": true,
-    "checked_at": "2026-11-06",
-    "available_size_count": 9,
-    "store_product_url": "https://www.sportvision.rs/patike/70071650-asics-noosa-tri-16",
+    "checked_at": "2026-11-25",
+    "available_size_count": 19,
+    "store_product_url": "https://www.sportvision.hr/tenisice/1025244-asics-noosa-tri-16",
     "variants": [
       {
-        "id": "70071650",
+        "id": "1025244",
         "sku": "1011B872-301",
         "gender": "men",
         "color": "Multicolor",
         "filename": "variants/1011B872-301.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011B872-301/images/1011B872-301.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70071650-asics-noosa-tri-16",
-        "available_size_count": 0
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011B872-301/images/1011B872-301.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1025244-asics-noosa-tri-16",
+        "available_size_count": 10
       },
       {
-        "id": "70090437",
-        "sku": "1011B872-753",
-        "gender": "men",
-        "color": "Zelena",
-        "filename": "variants/1011B872-753.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011B872-753/images/1011B872-753.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70090437-asics-noosa-tri-16",
-        "available_size_count": 4
-      },
-      {
-        "id": "70069490",
+        "id": "1026465",
         "sku": "1012B675-801",
         "gender": "women",
         "color": "Multicolor",
         "filename": "variants/1012B675-801.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B675-801/images/1012B675-801.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70069490-asics-noosa-tri-16",
-        "available_size_count": 1
-      },
-      {
-        "id": "70089638",
-        "sku": "1012B675-704",
-        "gender": "women",
-        "color": "Roze",
-        "filename": "variants/1012B675-704.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B675-704/images/1012B675-704.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70089638-asics-noosa-tri-16",
-        "available_size_count": 4
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1012B675-801/images/1012B675-801.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1026465-asics-noosa-tri-16",
+        "available_size_count": 9
       }
     ]
   },
@@ -451,64 +511,34 @@
     "sku": "1011B984-001",
     "filename": "versablast.webp",
     "source_url": "https://www.sportvision.hr/proizvodi/asics",
-    "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011B984-001/images/1011B984-001.jpg.webp",
+    "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011B984-001/images/1011B984-001.jpg.webp",
     "bytes": 0,
     "store_url": "https://www.sportvision.hr/proizvodi/asics",
     "store_sku": "1011B984-001",
     "available": true,
-    "checked_at": "2026-11-06",
-    "available_size_count": 30,
-    "store_product_url": "https://www.sportvision.rs/patike/70026934-asics-versablast-4",
+    "checked_at": "2026-11-25",
+    "available_size_count": 23,
+    "store_product_url": "https://www.sportvision.hr/tenisice/949839-asics-versablast-4",
     "variants": [
       {
-        "id": "70026934",
+        "id": "949839",
         "sku": "1011B984-001",
         "gender": "men",
         "color": "Crna",
         "filename": "variants/1011B984-001.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011B984-001/images/1011B984-001.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70026934-asics-versablast-4",
-        "available_size_count": 9
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011B984-001/images/1011B984-001.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/949839-asics-versablast-4",
+        "available_size_count": 13
       },
       {
-        "id": "70067822",
-        "sku": "1011B984-004",
-        "gender": "men",
-        "color": "Crna",
-        "filename": "variants/1011B984-004.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011B984-004/images/1011B984-004.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70067822-asics-versablast-4",
-        "available_size_count": 5
-      },
-      {
-        "id": "70090717",
-        "sku": "1011B984-005",
-        "gender": "men",
-        "color": "Crna",
-        "filename": "variants/1011B984-005.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011B984-005/images/1011B984-005.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70090717-asics-versablast-4",
-        "available_size_count": 1
-      },
-      {
-        "id": "70067902",
-        "sku": "1012B775-003",
-        "gender": "women",
-        "color": "Crna",
-        "filename": "variants/1012B775-003.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B775-003/images/1012B775-003.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70067902-asics-versablast-4",
-        "available_size_count": 7
-      },
-      {
-        "id": "70090277",
+        "id": "1049938",
         "sku": "1012B775-503",
         "gender": "women",
         "color": "Roze",
         "filename": "variants/1012B775-503.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B775-503/images/1012B775-503.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70090277-asics-versablast-4",
-        "available_size_count": 8
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1012B775-503/images/1012B775-503.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1049938-asics-versablast-4",
+        "available_size_count": 10
       }
     ]
   },
@@ -523,8 +553,8 @@
     "store_url": "https://www.sportvision.hr/proizvodi/asics",
     "store_sku": "1013A162-400",
     "available": true,
-    "checked_at": "2026-11-06",
-    "available_size_count": 6,
+    "checked_at": "2026-11-25",
+    "available_size_count": 5,
     "store_product_url": "https://www.sportvision.rs/patike/70088219-asics-metaspeed-sky-tokyo",
     "variants": [
       {
@@ -535,101 +565,91 @@
         "filename": "variants/1013A162-400.webp",
         "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1013A162-400/images/1013A162-400.jpg.webp",
         "store_url": "https://www.sportvision.rs/patike/70088219-asics-metaspeed-sky-tokyo",
-        "available_size_count": 6
+        "available_size_count": 5
       }
     ]
   },
   {
     "key": "magic-speed",
     "model_name": "MAGIC SPEED 5",
-    "sku": "1013A183-300",
+    "sku": "1013A183-101",
     "filename": "magic-speed.webp",
     "source_url": "https://www.sportvision.hr/proizvodi/asics",
-    "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1013A183-300/images/1013A183-300.jpg.webp",
+    "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1013A183-101/images/1013A183-101.jpg.webp",
     "bytes": 0,
     "store_url": "https://www.sportvision.hr/proizvodi/asics",
-    "store_sku": "1013A183-300",
+    "store_sku": "1013A183-101",
     "available": true,
-    "checked_at": "2026-11-06",
+    "checked_at": "2026-11-25",
     "available_size_count": 13,
-    "store_product_url": "https://www.sportvision.rs/patike/70069445-asics-magic-speed-5",
+    "store_product_url": "https://www.sportvision.hr/tenisice/1052519-asics-magic-speed-5",
     "variants": [
       {
-        "id": "70069445",
-        "sku": "1013A183-300",
-        "gender": "unisex",
-        "color": "Zelena",
-        "filename": "variants/1013A183-300.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1013A183-300/images/1013A183-300.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70069445-asics-magic-speed-5",
-        "available_size_count": 4
-      },
-      {
-        "id": "70084742",
+        "id": "1052519",
         "sku": "1013A183-101",
         "gender": "unisex",
         "color": "Bela",
         "filename": "variants/1013A183-101.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1013A183-101/images/1013A183-101.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70084742-asics-magic-speed-5",
-        "available_size_count": 9
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1013A183-101/images/1013A183-101.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1052519-asics-magic-speed-5",
+        "available_size_count": 8
+      },
+      {
+        "id": "1024820",
+        "sku": "1013A183-300",
+        "gender": "unisex",
+        "color": "Zelena",
+        "filename": "variants/1013A183-300.webp",
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1013A183-300/images/1013A183-300.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1024820-asics-magic-speed-5",
+        "available_size_count": 5
       }
     ]
   },
   {
     "key": "trabuco-max",
     "model_name": "TRABUCO MAX 5",
-    "sku": "1011C164-020",
+    "sku": "1011C164-200",
     "filename": "trabuco-max.webp",
     "source_url": "https://www.sportvision.hr/proizvodi/asics",
-    "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C164-020/images/1011C164-020.jpg.webp",
+    "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C164-200/images/1011C164-200.jpg.webp",
     "bytes": 0,
     "store_url": "https://www.sportvision.hr/proizvodi/asics",
-    "store_sku": "1011C164-020",
+    "store_sku": "1011C164-200",
     "available": true,
-    "checked_at": "2026-11-06",
-    "available_size_count": 16,
-    "store_product_url": "https://www.sportvision.rs/patike/70071695-asics-trabuco-max-5",
+    "checked_at": "2026-11-25",
+    "available_size_count": 27,
+    "store_product_url": "https://www.sportvision.hr/tenisice/1059437-asics-trabuco-max-5",
     "variants": [
       {
-        "id": "70071695",
-        "sku": "1011C164-020",
-        "gender": "men",
-        "color": "Bež",
-        "filename": "variants/1011C164-020.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C164-020/images/1011C164-020.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70071695-asics-trabuco-max-5",
-        "available_size_count": 0
-      },
-      {
-        "id": "70084712",
+        "id": "1059437",
         "sku": "1011C164-200",
         "gender": "men",
         "color": "Zelena",
         "filename": "variants/1011C164-200.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C164-200/images/1011C164-200.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70084712-asics-trabuco-max-5",
-        "available_size_count": 9
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C164-200/images/1011C164-200.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1059437-asics-trabuco-max-5",
+        "available_size_count": 8
       },
       {
-        "id": "70071905",
+        "id": "1032508",
+        "sku": "1011C164-020",
+        "gender": "men",
+        "color": "Bež",
+        "filename": "variants/1011C164-020.webp",
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1011C164-020/images/1011C164-020.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1032508-asics-trabuco-max-5",
+        "available_size_count": 10
+      },
+      {
+        "id": "1033381",
         "sku": "1012B937-250",
         "gender": "women",
         "color": "Bež",
         "filename": "variants/1012B937-250.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B937-250/images/1012B937-250.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70071905-asics-trabuco-max-5",
-        "available_size_count": 2
-      },
-      {
-        "id": "70084800",
-        "sku": "1012B937-700",
-        "gender": "women",
-        "color": "Roze",
-        "filename": "variants/1012B937-700.webp",
-        "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1012B937-700/images/1012B937-700.jpg.webp",
-        "store_url": "https://www.sportvision.rs/patike/70084800-asics-trabuco-max-5",
-        "available_size_count": 5
+        "image_url": "https://www.sportvision.hr/files/images/slike_proizvoda/media/101/1012B937-250/images/1012B937-250.jpg.webp",
+        "store_url": "https://www.sportvision.hr/tenisice/1033381-asics-trabuco-max-5",
+        "available_size_count": 9
       }
     ]
   },
@@ -644,8 +664,8 @@
     "store_url": "https://www.sportvision.hr/proizvodi/asics",
     "store_sku": "1011C276-001",
     "available": true,
-    "checked_at": "2026-11-06",
-    "available_size_count": 18,
+    "checked_at": "2026-11-25",
+    "available_size_count": 17,
     "store_product_url": "https://www.sportvision.rs/patike/70099342-asics-blazeblast",
     "variants": [
       {
@@ -656,7 +676,7 @@
         "filename": "variants/1011C276-001.webp",
         "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1011C276-001/images/1011C276-001.jpg.webp",
         "store_url": "https://www.sportvision.rs/patike/70099342-asics-blazeblast",
-        "available_size_count": 9
+        "available_size_count": 8
       },
       {
         "id": "70099276",
@@ -681,8 +701,8 @@
     "store_url": "https://www.sportvision.hr/proizvodi/asics",
     "store_sku": "1013A179-020",
     "available": true,
-    "checked_at": "2026-11-06",
-    "available_size_count": 11,
+    "checked_at": "2026-11-25",
+    "available_size_count": 10,
     "store_product_url": "https://www.sportvision.rs/patike/70069187-asics-fuji-spee-4",
     "variants": [
       {
@@ -693,7 +713,7 @@
         "filename": "variants/1013A179-020.webp",
         "image_url": "https://www.sportvision.rs/files/images/slike_proizvoda/media/101/1013A179-020/images/1013A179-020.jpg.webp",
         "store_url": "https://www.sportvision.rs/patike/70069187-asics-fuji-spee-4",
-        "available_size_count": 3
+        "available_size_count": 2
       },
       {
         "id": "70084865",
@@ -718,7 +738,7 @@
     "store_url": "https://www.sportvision.hr/proizvodi/asics",
     "store_sku": "1013A141-400",
     "available": true,
-    "checked_at": "2026-11-06",
+    "checked_at": "2026-11-25",
     "available_size_count": 6,
     "store_product_url": "https://www.sportvision.rs/patike/70067832-asics-metafuji-trail",
     "variants": [
